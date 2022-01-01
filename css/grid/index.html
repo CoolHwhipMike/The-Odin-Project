@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Grids</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+/*            grid-column-gap: 1em;
+            grid-row-gap: 1em;*/
+            grid-gap: 1em;
+        }
+
+        .wrapper > div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper > div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Aliquyam est duis ex stet tempor vero eos eirmod at molestie lorem eirmod ut sit ea at stet eu et esse aliquyam stet duo diam takimata est tempor est at dolores erat dolores voluptua tempor aliquyam enim rebum volutpat sanctus sanctus et consequat eirmod ut sed dolore voluptua feugait et stet nonumy takimata amet facilisis lorem sed erat vero suscipit dolore aliquyam dolor feugiat kasd et dolore clita kasd et lorem eum ea eos kasd dolore ut voluptua consectetuer dolore
+        </div>
+        <div>
+            Eros aliquyam blandit odio luptatum duis facilisis iusto justo eirmod nonumy clita eirmod clita diam takimata wisi justo diam justo enim accusam sadipscing ut aliquyam amet sea labore ut sed
+        </div>
+        <div>
+            Aliquyam est duis ex stet tempor vero eos eirmod at molestie lorem eirmod ut sit ea at stet eu et esse aliquyam stet duo diam takimata est tempor est at dolores erat dolores voluptua tempor aliquyam enim rebum volutpat sanctus sanctus et consequat eirmod ut sed dolore voluptua feugait et stet nonumy takimata amet facilisis lorem sed erat vero suscipit dolore aliquyam dolor feugiat kasd et dolore clita kasd et lorem eum ea eos kasd dolore ut voluptua consectetuer dolore
+        </div>
+        <div>
+            Eros aliquyam blandit odio luptatum duis facilisis iusto justo eirmod nonumy clita eirmod clita diam takimata wisi justo diam justo enim accusam sadipscing ut aliquyam amet sea labore ut sed
+        </div>
+    </div>
+</body>
+</html>

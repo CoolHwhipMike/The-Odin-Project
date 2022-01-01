@@ -1,0 +1,86 @@
+body {
+    background-color: cornsilk;
+    width: 450px;
+    margin: auto;
+    padding: 100px;
+}
+
+.toolbar {
+    background-color: lightslategray;
+    padding: 15px;
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 0.5em;
+    justify-content: space-between;
+}
+
+.toolbar__name-section {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.toolbar__theme-section {
+    text-align: right;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.toolbar__theme-selector {
+/*    background-color: lightblue;
+    color: whitesmoke;*/
+
+}
+
+.display {
+    background-color: dimgrey;
+    padding: 5px;
+    margin: 15px;
+    text-align: right;
+    border-radius: 0.25em;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.keypad {
+    background-color: lightslategray;
+    padding: 15px;
+    margin: 15px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 0.5em;
+}
+
+.keypad__btn {
+    margin: 3px;
+    padding: 5px;
+    border-radius: 0.25em;
+    background-color: lightgray;
+    color: whitesmoke;
+    font-size: 30px;
+    min-width: fit-content;
+}
+
+.keypad__btn--reset {
+    grid-column: span 2;
+}
+
+.keypad__btn--equal {
+    grid-column: span 2;
+}
+
+.keypad__btn--del {
+    background-color: salmon;
+}
+
+.keypad__btn--reset {
+    background-color: indianred;
+}
+
+.keypad__btn--equal {
+    background-color: cornflowerblue;
+}
