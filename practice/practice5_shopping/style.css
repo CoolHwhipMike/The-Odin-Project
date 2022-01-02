@@ -55,19 +55,24 @@ body {
     justify-content: center;
 }
 
-.content__img-section {
+.img-section {
     display: grid;
     grid-gap: 1px;
     background-color: darkgreen;
     padding: 200px;
 }
 
-.content__img {
+.img-section__main {
     background-color: lightgreen;
-    padding: 20px;
+	grid-column: 1/5;
+	padding: 50px;
 }
 
-.content__info-section {
+.img-section__small {
+	background-color: green;
+}
+
+.info-section {
     background-color: darkblue;
     padding: 200px;
 }
