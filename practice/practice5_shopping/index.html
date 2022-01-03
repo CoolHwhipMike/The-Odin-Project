@@ -6,35 +6,45 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo">COMPANY</div>
+        <h1 class="logo">Guitars</h1>
 
         <nav class="menubar">
-            <a href="#" class="menubar__link">Collections</a>
-            <a href="#" class="menubar__link">Men</a>
-            <a href="#" class="menubar__link">Women</a>
+            <a href="#" class="menubar__link">Signature</a>
+            <a href="#" class="menubar__link">Electric</a>
+            <a href="#" class="menubar__link">Acoustic</a>
             <a href="#" class="menubar__link">About</a>
             <a href="#" class="menubar__link">Contact</a>
         </nav>
 
         <nav class="userbar">
             <a href="#" class="userbar__link">
-                <img class="userbar__cart-img" src="shopping-cart-icon.svg" alt="cart icon" />
+                <img class="userbar__cart-img" src="icons/shopping-cart-icon.svg" alt="cart icon" />
             </a>
             <a href="#" class="userbar__link">
-                <img class="userbar__user-img" src="user-face.svg" alt="user icon place holder" />
+                <img class="userbar__user-img" src="icons/user-face.svg" alt="user icon place holder" />
             </a>
         </nav>
     </header>
 
-    <div class="content">
-        <div class="img-section">
-            <div class="img-section__main">1</div>
-            <div class="img-section__small">2</div>
-            <div class="img-section__small">3</div>
-            <div class="img-section__small">4</div>
-            <div class="img-section__small">5</div>
-        </div>
-        <div class="info-section"></div>
-    </div>
+    <main class="content">
+        <section class="img-section">
+            <img class="img-section__main" src="images/guitar1.jpg" />
+            <img class="img-section__small" src="images/guitar2.jpg" />
+            <img class="img-section__small" src="images/guitar3.jpg" />
+            <img class="img-section__small" src="images/guitar4.jpg" />
+            <img class="img-section__small" src="images/guitar5.jpg" />
+        </section>
+
+        <section class="info-section">
+            <h2 class="info-section__brand">Gibson</h2>
+            <h3 class="info-section__model">Les Paul Standard</h3>
+            <p class="info-section__description">The Gibson Les Paul is a solid body electric guitar that was first sold by the Gibson Guitar Corporation in 1952. The guitar was designed by factory manager John Huis and his team with input from and endorsement by guitarist Les Paul.</p>
+            <p class="info-section__price">$12,000</p>
+            <p class="info-section__discount">20% OFF</p>
+            <p class="info-section__original-price">$15,000</p>
+            <button class="info-section__quantity">quantity</button>
+            <button class="info-section__buy">add to cart</button>
+        </section>
+    </main>
 </body>
 </html>

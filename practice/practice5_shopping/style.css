@@ -6,22 +6,22 @@ things but let's focus on one thing at a time.
 */
 
 body {
-    /*        width: 1024px;
-    height: 768px;*/
+    width: 1024px;
+    height: 768px;
     font-family: Bahnschrift, sans-serif;
     background-color: ghostwhite;
-    margin: 20px;
+    /*margin: 20px;*/
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid;
-}
+    border-bottom: 2px solid darkslategrey;
+   }
 
 .logo {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 900;
     color: seagreen;
 }
@@ -33,7 +33,7 @@ body {
 
 .menubar__link {
     text-decoration: none;
-    color: darkslategrey;
+    color: black;
 }
 
 .userbar {
@@ -52,27 +52,73 @@ body {
 
 .content {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
 }
 
 .img-section {
     display: grid;
-    grid-gap: 1px;
-    background-color: darkgreen;
-    padding: 200px;
+    grid-gap: 10px;
 }
 
 .img-section__main {
-    background-color: lightgreen;
-	grid-column: 1/5;
-	padding: 50px;
+    grid-column: 1/5;
+    width: 430px;
 }
 
 .img-section__small {
-	background-color: green;
+    width: 100px;
 }
 
 .info-section {
-    background-color: darkblue;
-    padding: 200px;
+    /*background-color: grey;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 430px;
+    /*height: 400px;*/
+}
+
+.info-section__brand {
+    grid-area: 1 / span 2;
+    margin: 0px;
+    font-size: 30px;
+}
+
+.info-section__model {
+    grid-area: 2 / span 2;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.info-section__description {
+    grid-area: 3 / span 2;
+}
+
+.info-section__price {
+    grid-area: 4;
+    font-size: 20px;
+}
+
+.info-section__discount {
+    grid-area: 4;
+    font-size: 15px;
+}
+
+.info-section__original-price {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: lightslategrey;
+}
+
+.info-section__quantity {
+    grid-area: 6;
+    background-color: slategrey;
+    border-radius: 7px;
+    border: none;
+    /*box-shadow: rgb(0, 0, 0, 0.05) -5px 5px;*/
+}
+
+.info-section__buy {
+    grid-area: 6;
+    background-color: seagreen;
 }
