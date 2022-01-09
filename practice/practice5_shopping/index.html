@@ -5,46 +5,55 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <header class="header">
-        <h1 class="logo">Guitars</h1>
+    <div class="card">
 
-        <nav class="menubar">
-            <a href="#" class="menubar__link">Signature</a>
-            <a href="#" class="menubar__link">Electric</a>
-            <a href="#" class="menubar__link">Acoustic</a>
-            <a href="#" class="menubar__link">About</a>
-            <a href="#" class="menubar__link">Contact</a>
-        </nav>
+        <header class="header">
+            <div class="logo"><h1>Guitars</h1></div>
 
-        <nav class="userbar">
-            <a href="#" class="userbar__link">
-                <img class="userbar__cart-img" src="icons/shopping-cart-icon.svg" alt="cart icon" />
-            </a>
-            <a href="#" class="userbar__link">
-                <img class="userbar__user-img" src="icons/user-face.svg" alt="user icon place holder" />
-            </a>
-        </nav>
-    </header>
+            <nav>
+                <ul>
+                    <li><a href="#">Signature</a></li>
+                    <li><a href="#">Electric</a></li>
+                    <li><a href="#">Acoustic</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
 
-    <main class="content">
-        <section class="img-section">
-            <img class="img-section__main" src="images/guitar1.jpg" />
-            <img class="img-section__small" src="images/guitar2.jpg" />
-            <img class="img-section__small" src="images/guitar3.jpg" />
-            <img class="img-section__small" src="images/guitar4.jpg" />
-            <img class="img-section__small" src="images/guitar5.jpg" />
-        </section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#"><img class="cart-image" src="icons/shopping-cart-icon.svg" alt="cart icon" /></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="user-image" src="icons/user-face.svg" alt="user icon place holder" />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-        <section class="info-section">
-            <h2 class="info-section__brand">Gibson</h2>
-            <h3 class="info-section__model">Les Paul Standard</h3>
-            <p class="info-section__description">The Gibson Les Paul is a solid body electric guitar that was first sold by the Gibson Guitar Corporation in 1952. The guitar was designed by factory manager John Huis and his team with input from and endorsement by guitarist Les Paul.</p>
-            <p class="info-section__price">$12,000</p>
-            <p class="info-section__discount">20% OFF</p>
-            <p class="info-section__original-price">$15,000</p>
-            <button class="info-section__quantity">quantity</button>
-            <button class="info-section__buy">add to cart</button>
-        </section>
-    </main>
+        <main class="main">
+            <section class="image-section">
+                <div class="large-image"><img src="images/guitar1.jpg" /></div>
+                <div class="small-image"><img src="images/guitar2.jpg" /></div>
+                <div class="small-image"><img src="images/guitar3.jpg" /></div>
+                <div class="small-image"><img src="images/guitar4.jpg" /></div>
+                <div class="small-image"><img src="images/guitar5.jpg" /></div>
+            </section>
+
+            <section class="text-section">
+                <h2>Gibson</h2>
+                <h3>Les Paul Standard</h3>
+                <p>The Gibson Les Paul is a solid body electric guitar that was first sold by the Gibson Guitar Corporation in 1952. The guitar was designed by factory manager John Huis and his team with input from and endorsement by guitarist Les Paul.</p>
+                <p>$12,000</p>
+                <p>20% OFF</p>
+                <p>$15,000</p>
+                <button>quantity</button>
+                <button>add to cart</button>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
