@@ -46,12 +46,20 @@
             <section class="text-section">
                 <h2>Gibson</h2>
                 <h3>Les Paul Standard</h3>
-                <p>The Gibson Les Paul is a solid body electric guitar that was first sold by the Gibson Guitar Corporation in 1952. The guitar was designed by factory manager John Huis and his team with input from and endorsement by guitarist Les Paul.</p>
-                <p>$12,000</p>
-                <p>20% OFF</p>
-                <p>$15,000</p>
-                <button>quantity</button>
-                <button>add to cart</button>
+                <p class="description">The Gibson Les Paul is a solid body electric guitar that was first sold by the Gibson Guitar Corporation in 1952. The guitar was designed by factory manager John Huis and his team with input from and endorsement by guitarist Les Paul.</p>
+                <div class="pricing">
+                    <p class="price">$12,000</p>
+                    <p class="discount">20% OFF</p>
+                    <p class="original-price">$15,000</p>
+                </div>
+                <div class="btns">
+<!--                    <button class="quantity-button">quantity</button>-->
+<!--                    <label for="quantity">Quantity (between 1 and 5):</label>-->
+                    <input class="quantity-button" type="number" id="quantity" name="quantity" min="1" max="5" placeholder="1">
+                    <input class="add-button" type="submit" value="Add to cart">
+<!--                    <img class="cart-image" src="icons/shopping-cart-icon.svg" alt="cart icon"/> Add to cart-->
+<!--                    <button class="add-button"><img class="cart-image" src="icons/shopping-cart-icon.svg" alt="cart icon"/> Add to cart</button>-->
+                </div>
             </section>
         </main>
     </div>

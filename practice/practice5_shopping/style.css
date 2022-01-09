@@ -34,6 +34,35 @@ a {
     text-decoration: none;
 }
 
+button,
+input {
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    /*margin: 5px;*/
+    font-size: 1rem;
+}
+
+/* Images */
+.cart-image {
+    width: 20px;
+}
+
+.user-image {
+    width: 30px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+/* Logo */
+.logo {
+    color: seagreen;
+    font-size: 1.5rem;
+}
 
 /* Main Card Style */
 .card {
@@ -56,33 +85,18 @@ a {
 /* Main */
 .main {
     display: flex;
-    padding-top: 100px;
+    padding-top: 20px;
     justify-content: space-around;
 }
 
 /* Image Section */
 .image-section {
     display: grid;
-    width: 425px;
+    gap: 5px;
+    width: 450px;
     /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
 }
 
-.text-section {
-    width: 425px;
-}
-
-/* Images */
-.cart-image {
-    width: 20px;
-}
-
-.user-image {
-    width: 30px;
-}
-
-img {
-    width: 100%;
-}
 .large-image {
     grid-column: 1 / span 4;
     /*width: 440px;*/
@@ -91,12 +105,67 @@ img {
     /*width: 100px;*/
 }
 
-/* Logo */
-.logo {
-    color: seagreen;
-    font-size: 1.5rem;
+/* Text Section */
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 450px;
+    font-size: 2rem;
+    align-items: flex-start;
 }
 
+.description {
+    font-size: 1rem;
+}
+
+.pricing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.price {
+    font-size: 1.7rem;
+}
+
+.discount {
+    font-size: 0.75rem;
+    background-color: paleturquoise;
+    border-radius: 3px;
+    color: darkblue;
+    padding: 2px;
+    justify-self: flex-start;
+    align-self: baseline;
+    margin: 5px;
+}
+
+.original-price {
+    font-size: 0.75rem;
+    text-decoration: line-through;
+}
+
+/*.btns {
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+}*/
+
+.quantity-button {
+    background-color: lightsteelblue;
+}
+
+::placeholder {
+    color: darkslategray;
+    opacity: 1;
+}
+
+.add-button {
+    background-color: palegreen;
+}
+
+.add-button img {
+    height: 1rem;
+}
 
 
 
