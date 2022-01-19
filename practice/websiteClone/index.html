@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>getBrains: The Best Zombie Tools in the Business</title>
@@ -9,94 +10,144 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="dark">
-    <header class="flex header">
-        <h1><a href=""><img alt="The Get Brains zombie logo." id="logo" src="images/logo.svg"></a></h1>
-        <nav>
-            <ul class="flex">
-                <li><a href="">Zombie Tools</a></li>
-                <li><a href="">Hoard Tools</a></li>
-                <li><a href="">Learning Tools</a></li>
-                <li><a href="">Solutions</a></li>
-                <li><a href="">Help</a></li>
-                <li><a href="">Store</a></li>
-                <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-skull"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-biohazard"></i></a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="flex-generic darkbg" id="header">
+    <a href=""><img alt="The getBrains zombie logo." src="images/logo.svg"></a>
 
-    <section class="grid tools-section">
-        <div class="tools-header">
-            <h2>Essential tools for zombies and hoards</h2>
-            <p>We provide tools so you can enjoy your brains</p>
-        </div>
-        <div>
-            <h3><i class="fa-solid fa-screwdriver-wrench"></i>Zombie Tools</h3>
-            <p>The full zombie kit</p>
-            <p><a href="">Pick a tool</a></p>
-        </div>
-        <div>
-            <h3><i class="fa-solid fa-user-group"></i></i>Hoard Tools</h3>
-            <p>All the tools needed for a productive zombie hoard</p>
-            <p><a href="">See tools</a></p>
-        </div>
-        <div>
-            <h3><i class="fa-solid fa-graduation-cap"></i>Learning Tools</h3>
-            <p>Speed up the process of zombie evolution and become the best undead</p>
-            <p><a href="">Unlock your learning</a></p>
-        </div>
-        <div>
-            <h3><i class="fa-solid fa-code"></i>Braaaiinnss</h3>
-            <p>A modern programming language made specifically for a zombie's bony fingers</p>
-            <p><a href="">Braaii..I mean Learn More</a></p>
-        </div>
-        <div class="tools-large-grid">
-            <h3>Virtual Collaboration</h3>
-            <p>Reach members of your hoard via our Hive Mind Technology&trade;</p>
-            <p>Unleash the power of an unstoppable zombie army</p>
-            <a href="">Discover More</a>
-        </div>
-        <div class="tools-small-top-grid">
-            <h3>Zombie Development for Business</h3>
-            <p>Use our system to learn from the best</p>
-            <p>Our instructors are here to help any time you need</p>
-            <a href="">Discover More</a>
-        </div>
-        <div class="tools-small-bottom-grid">
-            <h3>Solar</h3>
-            <p>Our newest tool for zombie hoards</p>
-            <p>A unique way to connect with your peers and combine forces</p>
-            <a href="">Discover More</a>
-        </div>
-    </section>
-</div>
-<div class="light brain-types">
-    <p>The size of your hoard doesn't matter. With our tools, you will be able to grow, excel, and get to where you need
+    <nav>
+        <ul class="flex-generic">
+            <li><a class="darkbg" href="">Zombie Tools</a></li>
+            <li><a class="darkbg" href="">Hoard Tools</a></li>
+            <li><a class="darkbg" href="">Learning Tools</a></li>
+            <li><a class="darkbg" href="">Solutions</a></li>
+            <li><a class="darkbg" href="">Help</a></li>
+            <li><a class="darkbg" href="">Store</a></li>
+            <li><a class="darkbg" href=""><i class="fa-solid fa-eye"></i></a></li>
+            <li><a class="darkbg" href=""><i class="fa-solid fa-skull"></i></a></li>
+            <li><a class="darkbg" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a class="darkbg" href=""><i class="fa-solid fa-biohazard"></i></a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="darkbg grid-generic" id="showcase">
+    <div id="showcase-motto">
+        <h2 class="font-bigger">Essential tools for zombies and zombie hoards</h2>
+        <h3 class="font-big">We provide tools so you can enjoy your brains</h3>
+    </div>
+
+    <div class="showcase-products">
+        <h4><i class="fa-solid fa-screwdriver-wrench"></i>Zombie Tools</h4>
+        <p>This full zombie kit will make sure you can be the best you can be</p>
+        <a class="alt-link" href="">Pick a tool</a>
+    </div>
+    <div>
+        <h4><i class="fa-solid fa-user-group"></i></i>Hoard Tools</h4>
+        <p>All the tools needed for a productive zombie hoard</p>
+        <a class="alt-link" href="">See tools</a>
+    </div>
+    <div>
+        <h4><i class="fa-solid fa-graduation-cap"></i>Learning Tools</h4>
+        <p>Speed up the process of zombie evolution and become the best undead</p>
+        <a class="alt-link" href="">Unlock your learning</a>
+    </div>
+    <div>
+        <h4><i class="fa-solid fa-code"></i>Braaaiinnss</h4>
+        <p>A modern programming language made specifically for a zombie's bony fingers</p>
+        <a class="alt-link" href="">Braaii..I mean Learn More</a>
+    </div>
+
+    <div class="lightbg" id="showcase-main-panel">
+        <h4 class="font-biggest">Virtual Collaboration</h4>
+        <p class="font-big">Reach members of your hoard via our Hive Mind Technology&trade;</p>
+        <p class="font-big">Unleash the power of an unstoppable zombie army</p>
+        <a href="">Discover More</a>
+    </div>
+
+    <div class="gradient-one lightbg">
+        <h4>Zombie Development for Business</h4>
+        <p>Use our system to learn from the best</p>
+        <p>Our instructors are here to help any time you need</p>
+        <a href="">Discover More</a>
+    </div>
+    <div class="gradient-two lightbg">
+        <h4>Solar</h4>
+        <p>Our newest tool for zombie hoards</p>
+        <p>A unique way to connect with your peers and combine forces</p>
+        <a href="">Discover More</a>
+    </div>
+</section>
+
+<section id="showcase-platforms" class="lightbg">
+    <p class="font-increased">The size of your hoard doesn't matter. With our tools, you will be able to grow, excel, and get to where you need
         to be.</p>
-    <p>Just find some brains you want to eat, getBrains has the solution for you.</p>
-    <section class="brain-types-section">
-        <p class="medium brain-types-type">Male</p>
-        <p class="medium brain-types-type">Female</p>
-        <p class="medium brain-types-type">Vegan</p>
-        <p class="medium brain-types-type">Beef</p>
-        <p class="medium brain-types-type">Rich</p>
-        <p class="medium brain-types-type">Genius</p>
-        <p class="medium brain-types-type">Artist</p>
-        <p class="medium brain-types-type">Artificial</p>
-        <p class="medium brain-types-type">Musician</p>
-        <p class="medium brain-types-type">Vintage</p>
-        <p class="medium brain-types-type">See All</p>
-    </section>
-</div>
-<div class="medium">
-    <h3>News</h3>
-</div>
-<div class="dark">
-    <h3>Reviews</h3>
-</div>
+    <p class="font-increased">Just find some brains you want to eat, getBrains has the solution for you.</p>
+
+    <ul class="flex-generic">
+        <li><a class="normalbg btn" href="">Male</a></li>
+        <li><a class="normalbg btn" href="">Female</a></li>
+        <li><a class="normalbg btn" href="">Vegan</a></li>
+        <li><a class="normalbg btn" href="">Beef</a></li>
+        <li><a class="normalbg btn" href="">Rich</a></li>
+        <li><a class="normalbg btn" href="">Genius</a></li>
+        <li><a class="normalbg btn" href="">Artist</a></li>
+        <li><a class="normalbg btn" href="">Artificial</a></li>
+        <li><a class="normalbg btn" href="">Musician</a></li>
+        <li><a class="normalbg btn" href="">Vintage</a></li>
+        <li><a class="normalbg btn" href="">Full-Flavor</a></li>
+        <li><a class="normalbg btn" href="">Aged</a></li>
+        <li><a class="specialbg btn" href="">See All</a></li>
+    </ul>
+</section>
+
+<section id="news" class="normalbg">
+    <h2 class="font-big">News and Events</h2>
+
+    <div class="flex-generic">
+        <div class="news-stories">
+            <time>Jan 1, 2022 </time>
+            <h3>You're a zombie for life</h3>
+            <p>Lorem ipsum eveniet exercitationem impedit iste perferendis, placeat porro quisquam quo sed tempora
+                tenetur unde, voluptatum.</p>
+            <a href="">Learn More</a>
+        </div>
+        <div class="news-stories">
+            <time>July 24, 2021 </time>
+            <h3>Best Tools Ever Award</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi cumque eius eos eveniet
+                exercitationem impedit iste perferendis, placeat porro.</p>
+            <a href="">Learn More</a>
+        </div>
+        <div class="news-stories">
+            <time>Oct 11, 2020 </time>
+            <h3>getBrains IPO: Highest in History</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi cumque eius eos eveniet
+                exercitationem impedit iste quo porro provident quia.</p>
+            <a href="">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<section id="userbase" class="flex-generic darkbg">
+    <div class="userbase-left">
+        <h2 class="font-big">Feared</h2>
+        <p class="font-increased">All those warm-blooded survivors run. The know they can't compete with the awesome power provided by our
+            tools. With our help, you can rule the world.</p>
+    </div>
+
+    <div class="userbase-right">
+        <div>
+            <h3 class="font-biggest">2B+</h3>
+            <p>zombies use us</p>
+        </div>
+
+        <div>
+            <h3 class="font-biggest">23K</h3>
+            <p>turned quarterly</p>
+        </div>
+    </div>
+</section>
+
+
 <div class="light">
     <h3>Sponsors</h3>
 </div>
@@ -108,3 +159,5 @@
 </div>
 </body>
 </html>
+
+<!---->
