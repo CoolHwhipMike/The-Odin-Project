@@ -4,8 +4,8 @@
 /* Adding some variable for modularity */
 :root {
     --dark: #282a36;
-    --normal: #E1E1D5;
-    --light: #f8f8f2;
+    --normal: #ddd;
+    --light: #eee;
     --highlight: #50fa7b;
     --highlight-alt: #8be9fd;
     --accent: #bd93f9;
@@ -34,6 +34,10 @@ a {
 
 li {
     list-style: none;
+}
+
+img {
+    width: 100%;
 }
 
 /* Header Styling */
@@ -130,6 +134,42 @@ li {
     padding-bottom: 20px;
 }
 
+/*User-card Styling */
+#user-card {
+    margin: 0 50px -367px 50px;
+    background: var(--accent);
+    position: relative;
+    top: -185px;
+}
+
+.user-card-text {
+    padding-right: 100px;
+    align-self: center;
+}
+
+#user-card img {
+    width: 550px;
+}
+
+#user-card div p:nth-child(2) {
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+#user-card-controls {
+    padding: 200px 50px 40px 50px;
+}
+
+#user-card-controls a, button {
+    border: 1px solid var(--dark);
+}
+
+/* Companies Styling */
+
+#companies {
+    padding: 0 50px 70px 50px;
+}
+
 /* Userbase Styling */
 #userbase {
     padding: 80px 50px 230px 50px;
@@ -178,7 +218,15 @@ li {
 .btn {
     padding: 10px;
     border-radius: 40px;
-    /*margin: 10px;*/
+}
+
+.btn-alt {
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.btn-alt:hover {
+    background: var(--normal);
 }
 
 .alt-link {
@@ -208,9 +256,11 @@ li {
 .font-big {
     font-size: 2rem;
 }
+
 .font-bigger {
     font-size: 2.5rem;
 }
+
 .font-biggest {
     font-size: 3.5rem;
 }
