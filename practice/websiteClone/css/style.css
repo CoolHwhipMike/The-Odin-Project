@@ -58,6 +58,12 @@ img {
     width: 50px;
 }
 
+/* Footer Styling */
+#footer {
+    /*align-items: center;*/
+    padding: 10px 50px;
+}
+
 /* Product Showcase Styling */
 #showcase {
     padding: 50px 50px 80px 50px;
@@ -170,6 +176,69 @@ img {
     padding: 0 50px 70px 50px;
 }
 
+#companies div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+#companies img {
+    width: 120px;
+}
+
+/* Testimonial Styling */
+#testimonial {
+    padding: 0 50px 75px 50px;
+}
+
+#testimonial a {
+    border: 1px solid var(--dark);
+}
+
+#testimonial h2 {
+    padding-bottom: 20px;
+}
+
+#testimonial p {
+    padding-bottom: 20px;
+}
+
+#testimonial-cards {
+    flex-wrap: nowrap;
+    padding-bottom: 30px;
+}
+
+#testimonial-cards article {
+    border: 1px solid var(--accent);
+    width: 30%;
+}
+
+#testimonial-cards article h4 {
+    padding: 25px 25px 15px 25px;
+}
+
+#testimonial-cards article p {
+    padding: 0 25px 25px 25px;
+}
+
+/* Explore Styling */
+#explore {
+    padding: 65px 50px 70px 50px;
+}
+
+#explore-cards {
+    flex-wrap: nowrap;
+    padding-top: 30px;
+}
+
+#explore-cards div {
+    width: 25%;
+}
+
+#explore-cards div p {
+    padding: 10px 0;
+}
+
 /* Userbase Styling */
 #userbase {
     padding: 80px 50px 230px 50px;
@@ -264,3 +333,4 @@ img {
 .font-biggest {
     font-size: 3.5rem;
 }
+
