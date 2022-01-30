@@ -255,6 +255,45 @@ img {
     gap: 30px;
 }
 
+/* Footer Styling */
+#footer hr {
+	margin: 25px 0;
+}
+
+#footer a {
+    background: var(--dark);
+    color: var(--light);
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-section {
+    padding-bottom: 10px;
+}
+
+#footer-links li {
+	padding-right: 20px;
+}
+
+#footer-options li {
+	padding-left: 20px;
+}
+
+#footer-options i {
+	padding-right: 10px;
+}
+
+#footer-legal {
+	justify-content: flex-start;
+	padding: 20px 0;
+}
+
+#footer-legal li {
+	padding-right: 20px;
+}
+
 /* Utilities Styling*/
 .darkbg {
     background: var(--dark);
