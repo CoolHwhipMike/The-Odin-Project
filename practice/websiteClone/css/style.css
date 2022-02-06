@@ -1,72 +1,7 @@
-/*@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
-/* Adding some variable for modularity */
-:root {
-    --dark: #282a36;
-    --normal: #ddd;
-    --light: #eee;
-    --highlight: #50fa7b;
-    --highlight-alt: #8be9fd;
-    --accent: #bd93f9;
-    --orange: #ffb86c;
-    --pink: #ff79c6;
-    --red: #ff5555;
-    --yellow: #f1fa8c;
-}
-
-/* Removing some defaults because this seems to make things easier */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* This is general styling that affects basically the whole page */
-body {
-    font-family: 'Ubuntu', monospace;
-    line-height: 1.5;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-img {
-    width: 100%;
-}
-
-/* Header Styling */
-#header {
-    align-items: center;
-    padding: 10px 50px;
-}
-
-#header a:hover {
-    color: var(--highlight);
-}
-
-#header li {
-    margin-left: 15px;
-}
-
-#header img {
-    width: 50px;
-}
-
-/* Footer Styling */
-#footer {
-    /*align-items: center;*/
-    padding: 10px 50px;
-}
-
 /* Product Showcase Styling */
+
 #showcase {
-    padding: 50px 50px 80px 50px;
+    /* padding: 50px 50px 80px 50px; */
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -95,12 +30,49 @@ img {
     grid-area: span 2 / span 3;
     height: 600px;
     background: url("../images/remote.svg") center;
+    color: var(--normal);
     background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
 
-#showcase-platforms {
-    padding: 80px 400px 80px 50px;
+#showcase-main-panel a {
+    width: fit-content;
+    margin: 30px;
 }
+
+#showcase-main-panel h4 {
+    margin: 30px;
+}
+
+#showcase-main-panel p {
+    margin-left: 30px;
+}
+
+#showcase-side-panel {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+#showcase-side-panel a {
+    width: fit-content;
+    margin: 30px;
+}
+
+#showcase-side-panel h4 {
+    margin: 30px;
+}
+
+#showcase-side-panel p {
+    margin-left: 30px;
+}
+
+
+/* #showcase-platforms {
+    padding: 80px 400px 80px 50px;
+} */
 
 #showcase-platforms p {
     padding-bottom: 20px;
@@ -119,10 +91,13 @@ img {
     justify-self: flex-end;
 }
 
+
 /* News Styling */
-#news {
+
+
+/* #news {
     padding: 80px 50px 70px 50px;
-}
+} */
 
 #news h2 {
     padding-bottom: 30px;
@@ -140,9 +115,12 @@ img {
     padding-bottom: 20px;
 }
 
+
 /*User-card Styling */
+
 #user-card {
-    margin: 0 50px -367px 50px;
+    /* margin: 0 50px -367px 50px; */
+    margin-bottom: -367px;
     background: var(--accent);
     position: relative;
     top: -185px;
@@ -163,18 +141,23 @@ img {
 }
 
 #user-card-controls {
-    padding: 200px 50px 40px 50px;
+    /* padding: 200px 50px 40px 50px; */
+    padding-top: 200px;
+    padding-bottom: 40px;
 }
 
-#user-card-controls a, button {
+#user-card-controls a,
+button {
     border: 1px solid var(--dark);
 }
 
+
 /* Companies Styling */
 
-#companies {
+
+/* #companies {
     padding: 0 50px 70px 50px;
-}
+} */
 
 #companies div {
     display: flex;
@@ -186,12 +169,14 @@ img {
     width: 120px;
 }
 
+
 /* Testimonial Styling */
+
 #testimonial {
-    padding: 0 50px 75px 50px;
+    padding-bottom: 75px;
 }
 
-#testimonial a {
+#testimonial>a {
     border: 1px solid var(--dark);
 }
 
@@ -221,10 +206,13 @@ img {
     padding: 0 25px 25px 25px;
 }
 
+
 /* Explore Styling */
-#explore {
+
+
+/* #explore {
     padding: 65px 50px 70px 50px;
-}
+} */
 
 #explore-cards {
     flex-wrap: nowrap;
@@ -239,9 +227,13 @@ img {
     padding: 10px 0;
 }
 
+
 /* Userbase Styling */
+
 #userbase {
-    padding: 80px 50px 230px 50px;
+    /* padding: 80px 50px 230px 50px; */
+    padding-top: 80px;
+    padding-bottom: 230px;
     justify-content: space-between;
 }
 
@@ -255,9 +247,11 @@ img {
     gap: 30px;
 }
 
+
 /* Footer Styling */
+
 #footer hr {
-	margin: 25px 0;
+    margin: 25px 0;
 }
 
 #footer a {
@@ -274,102 +268,31 @@ img {
 }
 
 #footer-links li {
-	padding-right: 20px;
+    padding-right: 20px;
 }
 
 #footer-options li {
-	padding-left: 20px;
+    padding-left: 20px;
 }
 
 #footer-options i {
-	padding-right: 10px;
+    padding-right: 10px;
 }
 
 #footer-legal {
-	justify-content: flex-start;
-	padding: 20px 0;
+    justify-content: flex-start;
+    padding: 20px 0;
 }
 
 #footer-legal li {
-	padding-right: 20px;
+    padding-right: 20px;
 }
 
-/* Utilities Styling*/
-.darkbg {
-    background: var(--dark);
-    color: var(--light);
-}
 
-.normalbg {
-    background: var(--normal);
-    color: var(--dark);
-}
+/* Footer Styling */
 
-.lightbg {
-    background: var(--light);
-    color: var(--dark);
-}
 
-.specialbg {
-    background: var(--highlight-alt);
-    color: var(--dark);
-}
-
-.gradient-one {
-    background: linear-gradient(45deg, var(--orange), var(--pink));
-}
-
-.gradient-two {
-    background: linear-gradient(45deg, var(--red), var(--accent));
-}
-
-.btn {
-    padding: 10px;
-    border-radius: 40px;
-}
-
-.btn-alt {
-    padding: 10px;
-    border-radius: 40px;
-}
-
-.btn-alt:hover {
-    background: var(--normal);
-}
-
-.alt-link {
-    color: var(--accent);
-}
-
-.alt-link:hover {
-    text-decoration: underline;
-}
-
-.flex-generic {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /*align-items: center;*/
-}
-
-.grid-generic {
-    display: grid;
-    gap: 15px;
-}
-
-.font-increased {
-    font-size: 1.3rem;
-}
-
-.font-big {
-    font-size: 2rem;
-}
-
-.font-bigger {
-    font-size: 2.5rem;
-}
-
-.font-biggest {
-    font-size: 3.5rem;
-}
-
+/* #footer {
+    align-items: center;
+    padding: 10px 50px;
+} */

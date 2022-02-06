@@ -4,301 +4,330 @@
 <head>
     <meta charset="UTF-8">
     <title>getBrains: The Best Zombie Tools in the Business</title>
-    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-          integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" referrerpolicy="no-referrer"
+        rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/utilities.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-<header class="flex-generic darkbg" id="header">
-    <a href=""><img alt="The getBrains zombie logo." src="images/logo.svg"></a>
+    <!-- This is the header area: logo and navbar -->
+    <div class="darkbg">
+        <header class="flex-container content-container">
+            <a href=""><img class="logo-small" alt="The getBrains zombie logo." src="images/logo.svg"></a>
 
-    <nav>
-        <ul class="flex-generic">
-            <li><a class="darkbg" href="">Zombie Tools</a></li>
-            <li><a class="darkbg" href="">Hoard Tools</a></li>
-            <li><a class="darkbg" href="">Learning Tools</a></li>
-            <li><a class="darkbg" href="">Solutions</a></li>
-            <li><a class="darkbg" href="">Help</a></li>
-            <li><a class="darkbg" href="">Store</a></li>
-            <li><a class="darkbg" href=""><i class="fa-solid fa-eye"></i></a></li>
-            <li><a class="darkbg" href=""><i class="fa-solid fa-skull"></i></a></li>
-            <li><a class="darkbg" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-            <li><a class="darkbg" href=""><i class="fa-solid fa-biohazard"></i></a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="darkbg grid-generic" id="showcase">
-    <div id="showcase-motto">
-        <h2 class="font-bigger">Essential tools for zombies and zombie hoards</h2>
-        <h3 class="font-big">We provide tools so you can enjoy your brains</h3>
+            <nav>
+                <ul class="flex-container">
+                    <li><a class="darkbg link-alt margin-left" href="">Zombie Tools</a></li>
+                    <li><a class="darkbg link-alt margin-left" href="">Hoard Tools</a></li>
+                    <li><a class="darkbg link-alt margin-left" href="">Learning Tools</a></li>
+                    <li><a class="darkbg link-alt margin-left" href="">Solutions</a></li>
+                    <li><a class="darkbg link-alt margin-left" href="">Help</a></li>
+                    <li><a class="darkbg link-alt margin-left" href="">Store</a></li>
+                    <li><a class="darkbg link-alt margin-left" href=""><i class="fa-solid fa-eye"></i></a></li>
+                    <li><a class="darkbg link-alt margin-left" href=""><i class="fa-solid fa-skull"></i></a></li>
+                    <li><a class="darkbg link-alt margin-left" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a class="darkbg link-alt margin-left" href=""><i class="fa-solid fa-biohazard"></i></a></li>
+                </ul>
+            </nav>
+        </header>
     </div>
 
-    <div>
-        <h4><i class="fa-solid fa-screwdriver-wrench"></i>Zombie Tools</h4>
-        <p>This full zombie kit will make sure you can be the best you can be</p>
-        <a class="alt-link" href="">Pick a tool</a>
-    </div>
-    <div>
-        <h4><i class="fa-solid fa-user-group"></i></i>Hoard Tools</h4>
-        <p>All the tools needed for a productive zombie hoard</p>
-        <a class="alt-link" href="">See tools</a>
-    </div>
-    <div>
-        <h4><i class="fa-solid fa-graduation-cap"></i>Learning Tools</h4>
-        <p>Speed up the process of zombie evolution and become the best undead</p>
-        <a class="alt-link" href="">Unlock your learning</a>
-    </div>
-    <div>
-        <h4><i class="fa-solid fa-code"></i>Braaaiinnss</h4>
-        <p>A modern programming language made specifically for a zombie's bony fingers</p>
-        <a class="alt-link" href="">Braaii..I mean Learn More</a>
+    <!-- This is the main showcase area: a listing of out products and showcase cards -->
+    <div class="darkbg">
+        <section class="grid-container content-container" id="showcase">
+            <div id="showcase-motto">
+                <h2 class="font-bigger">Essential tools for zombies and zombie hoards</h2>
+                <h3 class="font-big">We provide tools so you can enjoy your brains</h3>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-screwdriver-wrench"></i>Zombie Tools</h4>
+                <p>This full zombie kit will make sure you can be the best you can be</p>
+                <a class="link" href="">Pick a tool</a>
+            </div>
+            <div>
+                <h4><i class="fa-solid fa-user-group"></i></i>Hoard Tools</h4>
+                <p>All the tools needed for a productive zombie hoard</p>
+                <a class="link" href="">See tools</a>
+            </div>
+            <div>
+                <h4><i class="fa-solid fa-graduation-cap"></i>Learning Tools</h4>
+                <p>Speed up the process of zombie evolution and become the best undead</p>
+                <a class="link" href="">Unlock your learning</a>
+            </div>
+            <div>
+                <h4><i class="fa-solid fa-code"></i>Braaaiinnss</h4>
+                <p>A modern programming language made specifically for a zombie's bony fingers</p>
+                <a class="link" href="">Braaii..I mean Learn More</a>
+            </div>
+
+            <div class="lightbg" id="showcase-main-panel">
+                <div>
+                    <h4 class="font-biggest">Virtual Collaboration</h4>
+                    <p class="font-big">Reach members of your hoard via our Hive Mind Technology&trade;</p>
+                    <p class="font-big">Unleash the power of an unstoppable zombie army</p>
+                </div>
+                <a class="btn-alt lightbg" href="">Discover More</a>
+            </div>
+
+            <div id="showcase-side-panel" class="gradient-one darkbg">
+                <h4>Zombie Development for Business</h4>
+                <p>Use our system to learn from the best</p>
+                <p>Our instructors are here to help any time you need</p>
+                <a href="" class="btn-transparent">Discover More</a>
+            </div>
+            <div id="showcase-side-panel" class="gradient-two darkbg">
+                <h4>Solar</h4>
+                <p>Our newest tool for zombie hoards</p>
+                <p>A unique way to connect with your peers and combine forces</p>
+                <a href="" class="btn-transparent">Discover More</a>
+            </div>
+        </section>
     </div>
 
-    <div class="lightbg" id="showcase-main-panel">
-        <h4 class="font-biggest">Virtual Collaboration</h4>
-        <p class="font-big">Reach members of your hoard via our Hive Mind Technology&trade;</p>
-        <p class="font-big">Unleash the power of an unstoppable zombie army</p>
-        <a href="">Discover More</a>
+    <!-- The available platforms (types of brains) -->
+    <div class="lightbg">
+        <section id="showcase-platforms" class="content-container">
+            <p class="font-increased">The size of your hoard doesn't matter. With our tools, you will be able to grow, excel, and get to where you need to be.</p>
+            <p class="font-increased">Just find some brains you want to eat, getBrains has the solution for you.</p>
+
+            <ul class="flex-container">
+                <li><a class="normalbg btn" href="">Male</a></li>
+                <li><a class="normalbg btn" href="">Female</a></li>
+                <li><a class="normalbg btn" href="">Vegan</a></li>
+                <li><a class="normalbg btn" href="">Beef</a></li>
+                <li><a class="normalbg btn" href="">Rich</a></li>
+                <li><a class="normalbg btn" href="">Genius</a></li>
+                <li><a class="normalbg btn" href="">Artist</a></li>
+                <li><a class="normalbg btn" href="">Artificial</a></li>
+                <li><a class="normalbg btn" href="">Musician</a></li>
+                <li><a class="normalbg btn" href="">Vintage</a></li>
+                <li><a class="normalbg btn" href="">Full-Flavor</a></li>
+                <li><a class="normalbg btn" href="">Aged</a></li>
+                <li><a class="specialbg btn" href="">See All</a></li>
+            </ul>
+        </section>
     </div>
 
-    <div class="gradient-one lightbg">
-        <h4>Zombie Development for Business</h4>
-        <p>Use our system to learn from the best</p>
-        <p>Our instructors are here to help any time you need</p>
-        <a href="">Discover More</a>
+    <!-- Recent news and events -->
+    <div class="normalbg">
+        <section id="news" class="content-container">
+            <h2 class="font-big">News and Events</h2>
+
+            <div class="flex-container">
+                <div class="news-stories">
+                    <time>Jan 1, 2022 </time>
+                    <h3>You're a zombie for life</h3>
+                    <p>Lorem ipsum eveniet exercitationem impedit iste perferendis, placeat porro quisquam quo sed tempora tenetur unde, voluptatum.</p>
+                    <a href="" class="link">Learn More</a>
+                </div>
+                <div class="news-stories">
+                    <time>July 24, 2021 </time>
+                    <h3>Best Tools Ever Award</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi cumque eius eos eveniet exercitationem impedit iste perferendis, placeat porro.</p>
+                    <a href="" class="link">Learn More</a>
+                </div>
+                <div class="news-stories">
+                    <time>Oct 23, 2020 </time>
+                    <h3>getBrains IPO: Highest in History</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi cumque eius eos eveniet exercitationem impedit iste quo porro provident quia.</p>
+                    <a href="" class="link">Learn More</a>
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="gradient-two lightbg">
-        <h4>Solar</h4>
-        <p>Our newest tool for zombie hoards</p>
-        <p>A unique way to connect with your peers and combine forces</p>
-        <a href="">Discover More</a>
+
+    <!-- Number of new and existing customers -->
+    <div class="darkbg">
+        <section id="userbase" class="flex-container content-container">
+            <div class="userbase-left">
+                <h2 class="font-big">Feared</h2>
+                <p class="font-increased">All those warm-blooded survivors run. The know they can't compete with the awesome power provided by our tools. With our help, you can rule the world.</p>
+            </div>
+
+            <div class="userbase-right">
+                <div>
+                    <h3 class="font-biggest">2B+</h3>
+                    <p>zombies use us</p>
+                </div>
+
+                <div>
+                    <h3 class="font-biggest">23K</h3>
+                    <p>turned quarterly</p>
+                </div>
+            </div>
+        </section>
     </div>
-</section>
 
-<section id="showcase-platforms" class="lightbg">
-    <p class="font-increased">The size of your hoard doesn't matter. With our tools, you will be able to grow, excel, and get to where you need
-        to be.</p>
-    <p class="font-increased">Just find some brains you want to eat, getBrains has the solution for you.</p>
-
-    <ul class="flex-generic">
-        <li><a class="normalbg btn" href="">Male</a></li>
-        <li><a class="normalbg btn" href="">Female</a></li>
-        <li><a class="normalbg btn" href="">Vegan</a></li>
-        <li><a class="normalbg btn" href="">Beef</a></li>
-        <li><a class="normalbg btn" href="">Rich</a></li>
-        <li><a class="normalbg btn" href="">Genius</a></li>
-        <li><a class="normalbg btn" href="">Artist</a></li>
-        <li><a class="normalbg btn" href="">Artificial</a></li>
-        <li><a class="normalbg btn" href="">Musician</a></li>
-        <li><a class="normalbg btn" href="">Vintage</a></li>
-        <li><a class="normalbg btn" href="">Full-Flavor</a></li>
-        <li><a class="normalbg btn" href="">Aged</a></li>
-        <li><a class="specialbg btn" href="">See All</a></li>
-    </ul>
-</section>
-
-<section id="news" class="normalbg">
-    <h2 class="font-big">News and Events</h2>
-
-    <div class="flex-generic">
-        <div class="news-stories">
-            <time>Jan 1, 2022 </time>
-            <h3>You're a zombie for life</h3>
-            <p>Lorem ipsum eveniet exercitationem impedit iste perferendis, placeat porro quisquam quo sed tempora
-                tenetur unde, voluptatum.</p>
-            <a href="" class="alt-link">Learn More</a>
+    <!-- Floating user card (spotlight) -->
+    <section id="user-card" class="flex-container content-container">
+        <img src="images/man.jpg" alt="">
+        <div class="user-card-text">
+            <p class="font-increased">getBrains is definitely the best zombie tool for the undead.</p>
+            <p>The guy in the picture</p>
+            <p>Unemployed</p>
         </div>
-        <div class="news-stories">
-            <time>July 24, 2021 </time>
-            <h3>Best Tools Ever Award</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi cumque eius eos eveniet
-                exercitationem impedit iste perferendis, placeat porro.</p>
-            <a href="" class="alt-link">Learn More</a>
-        </div>
-        <div class="news-stories">
-            <time>Oct 23, 2020 </time>
-            <h3>getBrains IPO: Highest in History</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi cumque eius eos eveniet
-                exercitationem impedit iste quo porro provident quia.</p>
-            <a href="" class="alt-link">Learn More</a>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section id="userbase" class="flex-generic darkbg">
-    <div class="userbase-left">
-        <h2 class="font-big">Feared</h2>
-        <p class="font-increased">All those warm-blooded survivors run. The know they can't compete with the awesome power provided by our
-            tools. With our help, you can rule the world.</p>
-    </div>
-
-    <div class="userbase-right">
-        <div>
-            <h3 class="font-biggest">2B+</h3>
-            <p>zombies use us</p>
-        </div>
-
-        <div>
-            <h3 class="font-biggest">23K</h3>
-            <p>turned quarterly</p>
-        </div>
-    </div>
-</section>
-
-<section id="user-card" class="flex-generic">
-    <img src="images/man.jpg" alt="">
-    <div class="user-card-text">
-        <p class="font-increased">getBrains is definitely the best zombie tool for the undead.</p>
-        <p>The guy in the picture</p>
-        <p>Unemployed</p>
-    </div>
-</section>
-
-<div id="user-card-controls" class="flex-generic lightbg">
-    <a href="" class="btn-alt lightbg">More Stories</a>
-    <div>
-        <button class="btn-alt lightbg">Previous</button>
-        <button class="btn-alt lightbg">Next</button>
-    </div>
-</div>
-
-<section id="companies" class="lightbg">
-    <p class="font-increased">getBrains is used across the world by many of the most successful hoards</p>
-    <div>
-        <img src="images/company1.png" alt="company1 logo">
-        <img src="images/company2.png" alt="company2 logo">
-        <img src="images/company3.png" alt="company3 logo">
-        <img src="images/company4.png" alt="company4 logo">
-        <img src="images/company5.png" alt="company5 logo">
-        <img src="images/company6.png" alt="company6 logo">
-    </div>
-</section>
-
-<section id="testimonial" class="lightbg">
-    <h2 class="font-big">Testimonials</h2>
-    <p class="font-increased">Check out how other zombies are using getBrains</p>
-    <div id="testimonial-cards" class="flex-generic">
-        <article>
-            <h4>RoadKill Cafe</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus dolorem, eos incidunt natus
-                quas saepe tempore. Autem consequatur debitis eum illum nemo nulla optio quas suscipit voluptates
-                voluptatibus. Perspiciatis!</p>
-            <p>Preston</p>
-            <p><a class="alt-link" href="">Read Story</a></p>
-        </article>
-        <article>
-            <h4>Leather 'R Us</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus dolorem, eos incidunt natus
-                quas saepe tempore. Autem consequatur debitis eum illum nemo nulla optio quas suscipit voluptates
-                voluptatibus. Perspiciatis!</p>
-            <p>Claudia</p>
-            <p><a class="alt-link" href="">Read Story</a></p>
-        </article>
-        <article>
-            <h4>Sonic Studios</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus dolorem, eos incidunt natus
-                quas saepe tempore. Autem consequatur debitis eum illum nemo nulla optio quas suscipit voluptates
-                voluptatibus. Perspiciatis!</p>
-            <p>Jeff</p>
-            <p><a class="alt-link" href="">Read Story</a></p>
-        </article>
-    </div>
-    <a href="" class="btn-alt lightbg">Read more accounts</a>
-</section>
-
-<section id="explore" class="normalbg">
-    <h2 class="font-big">Explore More</h2>
-
-    <div id="explore-cards" class="flex-generic">
-        <div>
-            <h3 class="font-biggest"><i class="fa-solid fa-hand-rock"></i></h3>
-            <h4 class="font-increased">Be a zombie the getBrains way</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, magni.</p>
-            <a class="alt-link" href="">Pick a tool</a>
-        </div>
-        <div>
-            <h3 class="font-biggest"><i class="fa-solid fa-hand-paper"></i></i></h3>
-            <h4 class="font-increased">getBrains highlights</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, veniam.</p>
-            <a class="alt-link" href="">See tools</a>
-        </div>
-        <div>
-            <h3 class="font-biggest"><i class="fa-solid fa-hand-scissors"></i></h3>
-            <h4 class="font-increased">Being a zombie in 2022</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, vitae.</p>
-            <a class="alt-link" href="">Unlock your learning</a>
+    <!-- Controls to cycle the spotlight card -->
+    <!-- Not working yet -->
+    <div class="lightbg">
+        <div id="user-card-controls" class="flex-container content-container">
+            <a href="" class="btn-alt lightbg">More Stories</a>
+            <div>
+                <button class="btn-alt lightbg">Previous</button>
+                <button class="btn-alt lightbg">Next</button>
+            </div>
         </div>
     </div>
-</section>
 
-<footer id="footer" class="darkbg">
-    <nav class="flex-generic">
-        <ul>
-            <li class="footer-section font-increased">Products</li>
-	    <li><a href="">Training</a></li>
-            <li><a href="">Tools</a></li>
-        </ul>
-        <ul>
-            <li class="footer-section font-increased">Solutions</li>
-            <li><a href="">Development</a></li>
-        </ul>
-        <ul>
-            <li class="footer-section font-increased">Innovations</li>
-            <li><a href="">Hoard Tactics</a></li>
-            <li><a href="">Brain Farming</a></li>
-            <li><a href="">Trapping</a></li>
-            <li><a href="">Renewables</a></li>
-        </ul>
-        <ul>
-            <li class="footer-section font-increased">Collaborations</li>
-            <li><a href="">Licensing</a></li>
-            <li><a href="">Users</a></li>
-            <li><a href="">Events</a></li>
-        </ul>
-        <ul>
-            <li class="footer-section font-increased">Help</li>
-            <li><a href="">Documentation</a></li>
-        </ul>
-        <ul>
-            <li class="footer-section font-increased">getBrains</li>
-            <li><a href="">About</a></li>
-            <li><a href="">Careers</a></li>
-        </ul>
-    </nav>
-
-    <hr>
-
-    <div class="flex-generic">
-	    <ul class="flex-generic" id="footer-links">
-            	<li><a class="darkbg" href=""><i class="fa-solid fa-dove"></i></a></li>
-            	<li><a class="darkbg" href=""><i class="fa-solid fa-podcast"></i></a></li>
-            	<li><a class="darkbg" href=""><i class="fa-solid fa-face-grin-wink"></i></a></li>
-            	<li><a class="darkbg" href=""><i class="fa-solid  fa-book"></i></a></li>
-            	<li><a class="darkbg" href=""><i class="fa-solid fa-rss"></i></a></li>
-	    </ul>
-	    <ul class="flex-generic" id="footer-options">
-            	<li><a class="darkbg" href=""><i class="fa-solid fa-globe"></i>United States</a></li>
-            	<li><a class="darkbg" href=""><i class="fa-solid fa-language"></i>English</a></li>
-	    </ul>
+    <!-- List of companies that use our product -->
+    <div class="lightbg">
+        <section id="companies" class="content-container">
+            <p class="font-increased">getBrains is used across the world by many of the most successful hoards</p>
+            <div>
+                <img src="images/company1.png" alt="company1 logo">
+                <img src="images/company2.png" alt="company2 logo">
+                <img src="images/company3.png" alt="company3 logo">
+                <img src="images/company4.png" alt="company4 logo">
+                <img src="images/company5.png" alt="company5 logo">
+                <img src="images/company6.png" alt="company6 logo">
+            </div>
+        </section>
     </div>
 
-    <div>
-	    <ul class="flex-generic" id="footer-legal">
-		    <li><a href="">Privacy</a></li>
-		    <li><a href="">Terms & Conditions</a></li>
-		    <li><a href="">Trademarks</a></li>
-		    <li><a href="">Legal</a></li>
-	    </ul>
+    <!-- Additional user testimonies -->
+    <div class="lightbg">
+        <section id="testimonial" class="content-container">
+            <h2 class="font-big">Testimonials</h2>
+            <p class="font-increased">Check out how other zombies are using getBrains</p>
+            <div id="testimonial-cards" class="flex-container">
+                <article>
+                    <h4>RoadKill Cafe</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus dolorem, eos incidunt natus quas saepe tempore. Autem consequatur debitis eum illum nemo nulla optio quas suscipit voluptates voluptatibus. Perspiciatis!</p>
+                    <p>Preston</p>
+                    <p><a class="link" href="">Read Story</a></p>
+                </article>
+                <article>
+                    <h4>Leather 'R Us</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus dolorem, eos incidunt natus quas saepe tempore. Autem consequatur debitis eum illum nemo nulla optio quas suscipit voluptates voluptatibus. Perspiciatis!</p>
+                    <p>Claudia</p>
+                    <p><a class="link" href="">Read Story</a></p>
+                </article>
+                <article>
+                    <h4>Sonic Studios</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus dolorem, eos incidunt natus quas saepe tempore. Autem consequatur debitis eum illum nemo nulla optio quas suscipit voluptates voluptatibus. Perspiciatis!</p>
+                    <p>Jeff</p>
+                    <p><a class="link" href="">Read Story</a></p>
+                </article>
+            </div>
+            <a href="" class="btn-alt lightbg">Read more accounts</a>
+        </section>
     </div>
 
-    <div class="flex-generic">
-	    <p>&copy; 2022, getBrains</p>
-	    <p>Made with brains</p>
+    <!-- Explore section: learn about additional features -->
+    <div class="normalbg">
+        <section id="explore" class="content-container">
+            <h2 class="font-big">Explore More</h2>
+
+            <div id="explore-cards" class="flex-container">
+                <div>
+                    <h3 class="font-biggest"><i class="fa-solid fa-hand-rock"></i></h3>
+                    <h4 class="font-increased">Be a zombie the getBrains way</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, magni.</p>
+                    <a class="link" href="">Pick a tool</a>
+                </div>
+                <div>
+                    <h3 class="font-biggest"><i class="fa-solid fa-hand-paper"></i></i>
+                    </h3>
+                    <h4 class="font-increased">getBrains highlights</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, veniam.</p>
+                    <a class="link" href="">See tools</a>
+                </div>
+                <div>
+                    <h3 class="font-biggest"><i class="fa-solid fa-hand-scissors"></i></h3>
+                    <h4 class="font-increased">Being a zombie in 2022</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, vitae.</p>
+                    <a class="link" href="">Unlock your learning</a>
+                </div>
+            </div>
+        </section>
     </div>
 
+    <!-- Footer section: main links -->
+    <div class="darkbg">
+        <footer id="footer" class="content-container">
+            <nav class="flex-container">
+                <ul>
+                    <li class="footer-section font-increased">Products</li>
+                    <li><a href="">Training</a></li>
+                    <li><a href="">Tools</a></li>
+                </ul>
+                <ul>
+                    <li class="footer-section font-increased">Solutions</li>
+                    <li><a href="">Development</a></li>
+                </ul>
+                <ul>
+                    <li class="footer-section font-increased">Innovations</li>
+                    <li><a href="">Hoard Tactics</a></li>
+                    <li><a href="">Brain Farming</a></li>
+                    <li><a href="">Trapping</a></li>
+                    <li><a href="">Renewables</a></li>
+                </ul>
+                <ul>
+                    <li class="footer-section font-increased">Collaborations</li>
+                    <li><a href="">Licensing</a></li>
+                    <li><a href="">Users</a></li>
+                    <li><a href="">Events</a></li>
+                </ul>
+                <ul>
+                    <li class="footer-section font-increased">Help</li>
+                    <li><a href="">Documentation</a></li>
+                </ul>
+                <ul>
+                    <li class="footer-section font-increased">getBrains</li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </nav>
 
-</footer>
+            <hr>
+
+            <!-- Footer: social media links -->
+            <div class="flex-container">
+                <ul class="flex-container" id="footer-links">
+                    <li><a class="darkbg" href=""><i class="fa-solid fa-dove"></i></a></li>
+                    <li><a class="darkbg" href=""><i class="fa-solid fa-podcast"></i></a></li>
+                    <li><a class="darkbg" href=""><i class="fa-solid fa-face-grin-wink"></i></a></li>
+                    <li><a class="darkbg" href=""><i class="fa-solid  fa-book"></i></a></li>
+                    <li><a class="darkbg" href=""><i class="fa-solid fa-rss"></i></a></li>
+                </ul>
+                <ul class="flex-container" id="footer-options">
+                    <li><a class="darkbg" href=""><i class="fa-solid fa-globe"></i>United States</a></li>
+                    <li><a class="darkbg" href=""><i class="fa-solid fa-language"></i>English</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer: copyright and terms section -->
+            <div>
+                <ul class="flex-container" id="footer-legal">
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Trademarks</a></li>
+                    <li><a href="">Legal</a></li>
+                </ul>
+            </div>
+
+            <div class="flex-container">
+                <p>&copy; 2022, getBrains</p>
+                <p>Made with brains</p>
+            </div>
+
+
+        </footer>
+    </div>
 </body>
+
 </html>

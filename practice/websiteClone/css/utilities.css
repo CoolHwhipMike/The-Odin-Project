@@ -1,0 +1,132 @@
+/* Background colors */
+
+.normalbg {
+    background: var(--normal);
+    color: var(--dark);
+}
+
+.darkbg {
+    background: var(--dark);
+    color: var(--light);
+}
+
+.lightbg {
+    background: var(--light);
+    color: var(--dark);
+}
+
+.specialbg {
+    background: var(--highlight-alt);
+    color: var(--dark);
+}
+
+.gradient-one {
+    background: linear-gradient(45deg, var(--orange), var(--pink));
+}
+
+.gradient-two {
+    background: linear-gradient(45deg, var(--red), var(--accent));
+}
+
+
+/* Buttons */
+
+.btn {
+    padding: 10px;
+    border-radius: 40px;
+}
+
+
+/* .btn-alt allows to change the hover on certain links */
+
+.btn-alt {
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.btn-alt:hover {
+    background: var(--normal);
+}
+
+
+/* Used in the gradient sections */
+
+.btn-transparent {
+    color: var(--light);
+    border: 1px solid var(--light);
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.btn-transparent:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* links */
+
+.link {
+    color: var(--accent);
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link-alt:hover {
+    color: var(--highlight);
+}
+
+
+/* containers */
+
+.content-container {
+    max-width: 1750px;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    /* Might put this back in the header only */
+}
+
+.grid-container {
+    display: grid;
+    gap: 15px;
+}
+
+
+/* Padding and margins */
+
+.margin-left {
+    margin-left: 20px;
+}
+
+
+/* Images and logos */
+
+.logo-small {
+    width: 50px;
+}
+
+
+/* fonts */
+
+.font-increased {
+    font-size: 1.3rem;
+}
+
+.font-big {
+    font-size: 2rem;
+}
+
+.font-bigger {
+    font-size: 2.5rem;
+}
+
+.font-biggest {
+    font-size: 3.5rem;
+}
