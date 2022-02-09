@@ -33,3 +33,7 @@
 img {
     width: 100%;
 }
+
+nav {
+    align-self: center;
+}

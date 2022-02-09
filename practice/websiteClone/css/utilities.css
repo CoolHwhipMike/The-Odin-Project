@@ -29,6 +29,13 @@
 }
 
 
+/* Borders */
+
+.border-dark {
+    border: 1px solid var(--dark);
+}
+
+
 /* Buttons */
 
 .btn {
@@ -42,6 +49,7 @@
 .btn-alt {
     padding: 10px;
     border-radius: 40px;
+    width: fit-content;
 }
 
 .btn-alt:hover {
@@ -56,6 +64,7 @@
     border: 1px solid var(--light);
     border-radius: 40px;
     padding: 10px;
+    width: fit-content;
 }
 
 .btn-transparent:hover {
@@ -77,11 +86,15 @@
     color: var(--highlight);
 }
 
+.link-line:hover {
+    text-decoration: underline;
+}
+
 
 /* containers */
 
 .content-container {
-    max-width: 1750px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -89,8 +102,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
-    /* Might put this back in the header only */
 }
 
 .grid-container {
@@ -101,32 +112,52 @@
 
 /* Padding and margins */
 
-.margin-left {
+.m-20 {
+    margin: 20px;
+}
+
+.ml-20 {
     margin-left: 20px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
 }
 
 
 /* Images and logos */
 
-.logo-small {
+.img-50 {
     width: 50px;
+}
+
+.img-120 {
+    width: 120px;
 }
 
 
 /* fonts */
 
-.font-increased {
+.font-13 {
     font-size: 1.3rem;
 }
 
-.font-big {
+.font-20 {
     font-size: 2rem;
 }
 
-.font-bigger {
+.font-25 {
     font-size: 2.5rem;
 }
 
-.font-biggest {
+.font-35 {
     font-size: 3.5rem;
 }
