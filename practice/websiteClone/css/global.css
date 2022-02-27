@@ -37,3 +37,7 @@ img {
 nav {
     align-self: center;
 }
+
+body {
+    font-size: 1.2rem;
+}
