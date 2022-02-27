@@ -1,0 +1,141 @@
+/* . */
+
+
+/* .dark {
+    padding: 15px;
+    background-color: var(--dark-bg);
+    color: var(--light-fg);
+    margin: 10px 0;
+
+
+}
+ */
+
+
+/* .page-title {
+    font-size: 1.5rem;
+    padding: 1rem;
+} */
+
+
+/* 
+nav {
+    display: inline-block;
+} */
+
+
+/* #nav-list li {
+    margin: 10px 20px 0 20px;
+} */
+
+
+/* Showcase */
+
+
+/* #showcase {
+    color: var(--light-fg);
+    background: url('../img/showcase.jpg') no-repeat 0 -400px;
+    min-height: 400px;
+}
+
+
+/* Newsletter */
+
+
+/* 
+
+
+
+
+ */
+
+
+/* 
+
+/* Boxes */
+
+
+/* 
+#boxes {
+    margin-top: 1.25rem;
+}
+
+.box {
+    padding: 1rem;
+}
+
+.box img {
+    width: 90px;
+} */
+
+
+/* Main-col and Services */
+
+
+/* #services h3,
+p {
+    margin: 10px;
+}
+
+#services li {
+    padding: 20px;
+);
+    margin-bottom: 5px;
+} */
+
+
+/* Sidebar */
+
+
+/* #sidebar {
+    margin-top: 10px;
+}
+
+#sidebar h3 {
+    margin: 10px;
+} */
+
+
+/* .quote-data {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 5px;
+} */
+
+
+/* #sidebar button {
+    width: 92.75%;
+} */
+
+
+/* Footer */
+
+
+/* footer {
+    background-color: var(--accent-one);
+    color: var(--light-fg);
+    padding: 20px;
+    margin-top: 20px;
+} */
+
+
+/* @media(min-width: 55rem) {
+    /* header {
+        visibility: hidden;
+    } */
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#user-email,
+#newsletter button {
+    /* max-width: 325px; */
+    width: auto;
+}
+
+
+}
+*/

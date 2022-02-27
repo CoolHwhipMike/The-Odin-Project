@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Changes for "head" section:
+1. Removed the keywords - They aren't used by Google due to spam and incorrect use. This is repeated for the other pages. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional web design">
+    <meta name="author" content="Brad Traversy, updated by CoolHwhipMike">
+    <title>Acme Web Design | Welcome</title>
+    <link rel="stylesheet" href="css/style_updated.css">
+</head>
+
+<body>
+
+    <!-- Changes for "header" section:
+    1. Removed the <h1> from company name. There should only be one <h1> per page and is should be what the page is about. Not what site it is.
+    2. Changed ".current" to ".highlight" since they have the same styling.
+    3. Moved class to anchor tag directly.
+    These changes are repeated for the other pages. -->
+
+    <header>
+        <div class="container flex">
+            <p class="company-name"><span class="highlight">Acme</span> Web Design</p>
+            <nav>
+                <ul class="navbar-list">
+                    <li><a class="highlight" href="index-updated.html">HOME</a></li>
+                    <li><a href="about_updated.html">ABOUT</a></li>
+                    <li><a href="services_updated.html">SERVICES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Added the <main> to follow more currant semantic HTML. This is repeated for the other pages. -->
+
+    <main>
+        <section class="showcase">
+            <div class="container">
+                <h1 class="page-title">Affordable Professional Web Design</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, recusandae saepe vitae eum corrupti dolore accusantium, porro eius unde temporibus excepturi nisi.</p>
+            </div>
+        </section>
+
+        <!-- Changes for "newsletter" section.
+        1. Replaced <h1> with <h2> for the reason stated previously.
+        2. Added a <label> for the form input. This follows  current semantic guidlines for screen readers.
+        These changes are repeated for the other pages. -->
+
+        <section class="newsletter">
+            <div class="container flex">
+                <h2>Subscribe To Our Newsletter</h2>
+                <!-- We need an "action" and "method" to make this form work. I'll hide the label text with CSS. -->
+                <form action="" method="">
+                    <label for="user-email">Enter email to subscribe.</label>
+                    <input id="user-email" type="email" placeholder="Enter email">
+
+                    <!-- The default behaviour of a button associated with a form is to submit the form.
+                    So, I'm omitting type="submit". -->
+                    <button class="btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Changes for "boxes" section:
+        1. Added "alt" text to the images for current semantic HTML. -->
+
+        <section>
+            <div class="container flex">
+                <div class="featured-skills">
+                    <img src="img/logo_html.png" alt="HTML5 logo image">
+                    <h3>HTML5 Markup</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, magni?</p>
+                </div>
+                <div class="featured-skills">
+                    <img src="img/logo_css.png" alt="CSS logo image">
+                    <h3>CSS3 Styling</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, magni?</p>
+                </div>
+                <div class="featured-skills">
+                    <img src="img/logo_brush.png" alt="Brush image">
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, magni?</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Changes for "footer" section:
+    1. Replaced <p> with <small> which is often used with copyright, credit, etc. text.
+    This is repeated for the other pages. -->
+
+    <footer>
+        <div class="container">
+            <small>Acme Web Design, Copyright &copy; 2022</small>
+        </div>
+    </footer>
+</body>
+
+</html>

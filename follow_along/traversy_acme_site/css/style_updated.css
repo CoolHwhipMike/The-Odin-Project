@@ -1,0 +1,242 @@
+        /* Variables added for easier theming */
+        
+         :root {
+            --light-bg: #f4f4f4;
+            --medium-bg: #e6e6e6;
+            --dark-bg: #35424a;
+            --light-fg: #fff;
+            --accent-one: #e8491d;
+            --accent-two: #ccc;
+        }
+        /* Global */
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+            background-color: var(--light-bg);
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .highlight {
+            color: var(--accent-one);
+            font-weight: bold;
+        }
+        
+        .btn {
+            background-color: var(--accent-one);
+            color: var(--light-fg);
+            border: none;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            width: 100%;
+        }
+        
+        .dark {
+            background-color: var(--dark-bg);
+            color: var(--light-fg);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        /* Header */
+        
+        header {
+            background-color: var(--dark-bg);
+            color: var(--light-fg);
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--accent-one);
+        }
+        
+        header a {
+            color: var(--light-fg);
+        }
+        
+        header a:hover {
+            color: var(--light-fg);
+            font-weight: bold;
+        }
+        
+        .company-name {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .navbar-list {
+            display: flex;
+            justify-content: space-between;
+            width: 250px;
+            margin: auto;
+        }
+        /* showcase */
+        
+        .showcase {
+            color: var(--light-fg);
+            background: url('../img/showcase.jpg') 0 -100px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        
+        .showcase p {
+            font-size: 1.35rem;
+        }
+        /* Newsletter */
+        
+        .newsletter {
+            background-color: var(--dark-bg);
+            color: var(--light-fg);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        
+        .newsletter h2 {
+            padding-bottom: 1rem;
+            font-size: 1.35rem;
+        }
+        
+        .newsletter label {
+            display: none;
+        }
+        
+        #user-email {
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            width: 100%;
+            border: none;
+        }
+        /* featured skills */
+        
+        .featured-skills {
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+        
+        .featured-skills img {
+            width: 50%;
+        }
+        /* about page */
+        
+        .main-content {
+            padding-bottom: 1rem;
+        }
+        
+        .page-title {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: 3rem;
+        }
+        
+        .main-content p {
+            font-size: 1.35rem;
+            padding-bottom: 1rem;
+        }
+        
+        .aside-content {
+            padding-bottom: 1rem;
+        }
+        
+        .aside-content h2 {
+            padding-bottom: 1rem;
+            font-size: 1.35rem;
+        }
+        /* Services */
+        
+        .services {
+            padding-bottom: 0.5rem;
+        }
+        
+        .services li {
+            background-color: var(--medium-bg);
+            border: 2px solid var(--accent-two);
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .services-description {
+            padding-bottom: 1rem;
+        }
+        
+        .services-price {
+            font-style: italic;
+        }
+        
+        .quote-form {
+            background-color: var(--dark-bg);
+            color: var(--light-fg);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .quote-form h2 {
+            padding-bottom: 1rem;
+            font-size: 1.35rem;
+        }
+        
+        .user-data {
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            width: 100%;
+            border: none;
+        }
+        /* footer */
+        
+        footer {
+            background-color: var(--accent-one);
+            color: var(--light-fg);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        /* media queries */
+        
+        @media(min-width: 1000px) {
+            .container {
+                max-width: 1400px;
+            }
+            .flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+            }
+            #user-email,
+            .btn {
+                width: auto;
+            }
+            .newsletter h2 {
+                padding-top: 0.5rem;
+            }
+            .featured-skills img {
+                max-width: 10rem;
+            }
+            .main-content,
+            .services {
+                flex-basis: 70%;
+            }
+            .aside-content,
+            .quote-form {
+                flex-basis: 25%;
+            }
+        }
