@@ -15,3 +15,7 @@ I've decided to complete the Odin Project. The first project is to build a basic
 9. [&check;] Under description add a *ul* of needed ingredients.
 10. [&check;] Under ingredients add an *ol* of the steps.
 11. [&check;] Add two more recipies.
+
+## Goals for the second part of this project
+
+1. [ ] Add some styling with external CSS.
