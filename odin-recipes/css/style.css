@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #748E9C;
+    color: #555;
+    font-family: 'Skranji', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+li {
+    list-style: none;
+}
+
+/* Landing/intro styling */
+.intro {
+    width: 80%;
+    margin: auto;
+    padding: 40px 10%;
+    background-image: url('https://unsplash.it/1920/1080');
+}
+
+.intro p {
+    padding-top: 40px;
+}
+
+.title {
+    text-align: center;
+    border-bottom: 1px #555 solid;
+}
+
+/* Card Styling */
+
+.card {
+    background-image: url('https://unsplash.it/720/480');
+    font-size: 1.5em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #333;
+    width: 40%;
+    padding: 100px;
+    margin: 40px auto;
+    transition-duration: 250ms;
+}
+
+.card:hover {
+    transform: translate(-5px, -5px);
+    transition-duration: 250ms;
+    box-shadow: 10px 10px 20px #444;
+}
