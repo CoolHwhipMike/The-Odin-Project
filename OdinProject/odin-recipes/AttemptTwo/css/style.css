@@ -1,0 +1,110 @@
+:root {
+    --bg: #eedfee;
+    --fg: #ddd;
+    --dark-accent: #3f3a50;
+    --light-accent: #eaf0ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--fg);
+    font-size: 1.25rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-accent);
+}
+
+/* img {
+    width: 100%;
+} */
+
+.landing {
+
+    background-image: url('../img/forest.jpg');
+    background-position: center;
+    height: 35vh;
+    text-align: center;
+}
+
+.landing h1 {
+    padding: 1.5em 0 0.5em 0;
+}
+
+.logo {
+    background: var(--bg);
+    padding: 0.5rem;
+    width: 150px;
+    margin: -81.3px auto;
+    display: block;
+    border-radius: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    max-width: 1700px;
+    margin: 100px auto 75px auto;
+    gap: 25px;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 2px 4px 6px rgba(63, 58, 80, 0.75);
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+    text-align: center;
+    width: 350px;
+    height: 450px;
+}
+
+.card:hover {
+    transform: translate(-5px, -10px);
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+    box-shadow: 3px 6px 9px rgba(63, 58, 80, 0.5);
+}
+
+.card:first-child {
+    background-image: url('../img/cakes.jpg');
+}
+.card:nth-child(2) {
+    background-image: url('../img/pies.jpg');
+}
+.card:last-child {
+    background-image: url('../img/cookies.jpg');
+}
+
+.card h3 {
+    background: var(--light-accent);
+    padding: 25px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.card h3::before {
+    content: '';
+    width: 175px;
+    height: 1px;
+    background: var(--dark-accent);
+    position: absolute;
+    left: 25%;
+    top: 75%;
+}
+
+.copyright {
+    background: var(--dark-accent);
+    padding: 0.5em;
+    text-align: center;
+}
