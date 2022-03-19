@@ -18,4 +18,10 @@ I've decided to complete the Odin Project. The first project is to build a basic
 
 ## Goals for the second part of this project
 
-1. [ ] Add some styling with external CSS.
+1. [&check;] Add some styling with external CSS.
+
+## Finishing thoughts
+
+For *Attempt Two* I changed a few things and didn't follow the directions exactly. I changed the directory structure slightly and don't have my recipes organized as a list. I liked the idea of a card type layout and nesting that inside a list didn't make sense to me.
+
+This site could use more design work. It should be resposive but could be better. I also need to work on simplifying the CSS.

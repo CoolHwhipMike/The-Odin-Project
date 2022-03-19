@@ -1,10 +1,12 @@
+/* Variables */
 :root {
-    --bg: #eedfee;
-    --fg: #ddd;
-    --dark-accent: #3f3a50;
-    --light-accent: #eaf0ff;
+    --purple: #eedfee;
+    --dark-purple: #3f3a50;
+    --gray: #ddd;
+    --blue: #eaf0ff;
 }
 
+/* General Styling */
 * {
     margin: 0;
     padding: 0;
@@ -12,26 +14,23 @@
 }
 
 body {
-    background: var(--bg);
-    color: var(--fg);
+    background: var(--purple);
     font-size: 1.25rem;
+    line-height: 1.5;
 }
 
 a {
     text-decoration: none;
-    color: var(--dark-accent);
+    color: var(--dark-purple);
 }
 
-/* img {
-    width: 100%;
-} */
-
+/* Banner/landing Styling */
 .landing {
-
     background-image: url('../img/forest.jpg');
     background-position: center;
     height: 35vh;
     text-align: center;
+    color: var(--gray);
 }
 
 .landing h1 {
@@ -39,19 +38,20 @@ a {
 }
 
 .logo {
-    background: var(--bg);
+    background: var(--purple);
     padding: 0.5rem;
     width: 150px;
-    margin: -81.3px auto;
+    margin: -75px auto;
     display: block;
     border-radius: 100%;
 }
 
+/* Card Styling */
 .flex {
     display: flex;
     flex-wrap: wrap;
-    width: 95%;
-    max-width: 1700px;
+    width: 90%;
+    max-width: 1200px;
     margin: 100px auto 75px auto;
     gap: 25px;
     justify-content: space-evenly;
@@ -87,7 +87,7 @@ a {
 }
 
 .card h3 {
-    background: var(--light-accent);
+    background: linear-gradient(var(--blue) 25%, rgba(0,0,0,0));
     padding: 25px;
     border-radius: 15px 15px 0 0;
     position: relative;
@@ -97,14 +97,94 @@ a {
     content: '';
     width: 175px;
     height: 1px;
-    background: var(--dark-accent);
+    background: var(--dark-purple);
     position: absolute;
     left: 25%;
     top: 75%;
 }
 
+/* Footer Styling */
 .copyright {
-    background: var(--dark-accent);
+    background: var(--dark-purple);
+    color: var(--gray);
     padding: 0.5em;
     text-align: center;
+}
+
+/* Recipe Page Styling */
+/* About Section */
+
+.about {
+    color: var(--dark-purple);
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto 75px auto;
+    text-indent: 2rem;
+    position: relative;
+}
+
+.about::after {
+    content: '';
+    width: 50%;
+    height: 1px;
+    background: var(--dark-purple);
+    position: absolute;
+    left: 25%;
+    margin-top: 20px;
+}
+
+.about img {
+    float: right;
+    width: 45vw;
+    max-width: 600px;
+    margin: 0 0 25px 25px;
+}
+
+.about p {
+    margin-bottom: 25px;
+}
+
+/* Ingredients and directions section */
+
+.steps {
+    flex-wrap: nowrap;
+}
+
+.ingredients {
+    flex-basis: 40%;
+}
+
+.ingredients li {
+    margin-left: 1em;
+    margin-top: 15px;
+}
+
+.directions {
+    flex-basis: 60%;
+}
+
+.directions li {
+    margin-left: 1.25em;
+    margin-top: 15px;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+    .landing {
+        height: 40vh;
+    }
+    .about img {
+        float: none;
+        width: 90vw;
+        margin: 0 auto 25px auto;
+        display: block;
+    }
+    .steps {
+        flex-wrap: wrap;
+    }
+    .ingredients,
+    .directions {
+        flex-basis: 100%;
+    }
 }
