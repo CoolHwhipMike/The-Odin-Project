@@ -3,10 +3,10 @@
 html, body {
   height: 100%;
 }
-
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
+  padding: 0;
   background: #aaa;
   color: #333;
   /* I'll give you this one for free lol */
@@ -20,6 +20,20 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.text {
+  margin-left: 62px;
+  margin-top: -10px;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: bold;
+  align-self: flex-start;
 }
 
 .icon {
@@ -33,6 +47,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 20px;
 }
 
 .close-button {
@@ -46,17 +61,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
 }
 
 button {
   padding: 8px 16px;
   border-radius: 8px;
+  margin-top: 20px;
 }
 
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  margin-left: 62px;
+  margin-right: 5px;
 }
 
 button.cancel {
