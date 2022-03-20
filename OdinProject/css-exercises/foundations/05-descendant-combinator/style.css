@@ -1,0 +1,29 @@
+div p {
+    background: yellow;
+    color: darkred;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Below are alternate solutions. */
+
+/* .container p {
+    background: yellow;
+    color: darkred;
+    font-size: 20px;
+    text-align: center;
+} */
+
+/* div .text {
+    background: yellow;
+    color: darkred;
+    font-size: 20px;
+    text-align: center;
+} */
+
+/* .container .text {
+    background: yellow;
+    color: darkred;
+    font-size: 20px;
+    text-align: center;
+} */
