@@ -13,52 +13,79 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header flex-row center">
         <div class="header__logo">Odin Landing Page</div>
-        <ul class="header__navbar">
-            <li class="header__link">header link one</li>
-            <li class="header__link">header link two</li>
-            <li class="header__link">header link three</li>
+        <ul class="header__navbar flex-row">
+            <li class="header__link"><a href="">link one</a></li>
+            <li class="header__link"><a href="">link two</a></li>
+            <li class="header__link"><a href="">link three</a></li>
         </ul>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero flex-row center">
             <div class="hero__info">
-                <h1 class="txt">XXXX</h1>
-                <p class="txt">XXXX</p>
-                <button class="btn">XXXX</button>
+                <h1 class="hero__main-txt">This website is awesome</h1>
+                <p class="hero__secondary-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
+                    aperiam necessitatibus doloremque assumenda rerum voluptatum.</p>
+                <a class="btn" href="">Sign up</a>
             </div>
-            <div class="hero__img">XXXX</div>
+            <img src="https://unsplash.it/1366/768" alt="A place holder image from unsplash.">
+            <!-- <div class="hero__img">XXXX</div> -->
         </section>
 
         <section class="extra-info">
-            <p class="text">XXXX</p>
-            <div class="extra-info__container">
-                <div class="extra--info__img">XXXX</div>
-                <div class="extra--info__img">XXXX</div>
-                <div class="extra--info__img">XXXX</div>
-                <div class="extra--info__img">XXXX</div>
+            <p class="text">Some random information.</p>
+            <div class="extra-info__container flex-row center">
+                <div>
+                    <img class="extra--info__img" src="https://unsplash.it/300/300"
+                        alt="A place holder image from unsplash."></img>
+                    <caption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, neque.</caption>
+                </div>
+                <div>
+                    <img class="extra--info__img" src="https://unsplash.it/300/301"
+                        alt="A place holder image from unsplash."></img>
+                    <caption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, neque.</caption>
+                </div>
+                <div>
+                    <img class="extra--info__img" src="https://unsplash.it/301/300"
+                        alt="A place holder image from unsplash."></img>
+                    <caption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, neque.</caption>
+                </div>
+                <div>
+                    <img class="extra--info__img" src="https://unsplash.it/301/301"
+                        alt="A place holder image from unsplash."></img>
+                    <caption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, neque.</caption>
+                </div>
             </div>
         </section>
 
         <section class="quote">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sed soluta doloremque officiis
-                recusandae nam, ipsa molestiae, id nemo magni voluptas eum repellat. Autem laudantium assumenda quasi
-                magni a nobis.</p>
-            <p>XXXXXXXX</p>
+            <div class="quote__container center">
+                <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, molestias adipisci esse,
+                    consequatur
+                    iste
+                    impedit corrupti eligendi excepturi repudiandae atque cumque commodi nam consequuntur dolores nemo
+                    eaque
+                    corporis! Rem excepturi consequatur libero debitis facilis suscipit?</blockquote>
+                <footer>- Author, Person that said the quote</footer>
+            </div>
         </section>
 
         <section class="cta">
-            <div class="cta__card">
-                <h3 class="txt">XXX</h3>
-                <p class="txt">XXXX</p>
-                <button class="btn">XXX</button>
+            <div class="cta__card flex-row">
+                <div class="left">
+                    <h3 class="cta__main-txt">Call to action! It's time!</h3>
+                    <p class="cta__secondary-txt">Sign up for our product by clicking that button right over there!</p>
+                </div>
+                <div class="right">
+                    <a class="btn" href="">Sign up</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <small> Copyright &copy; The Odin Project 2021</small>
     </footer>
 </body>
