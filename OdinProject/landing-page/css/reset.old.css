@@ -1,3 +1,7 @@
+/*
+I often reset something like padding and margin. I found this on the internet and wanted to try it. https://piccalil.li/blog/a-modern-css-reset/
+*/
+
 /* Box sizing rules */
 *,
 *::before,
@@ -38,10 +42,11 @@ body {
 
 /* A elements that don't have a class get default styles */
 /* a:not([class]) {
-  text-decoration-skip-ink: none;
+  text-decoration-skip-ink: auto;
 } */
+
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 /* Make images easier to work with */

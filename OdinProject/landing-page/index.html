@@ -13,80 +13,79 @@
 </head>
 
 <body>
-    <header class="header flex-row center">
-        <div class="header__logo">Odin Landing Page</div>
-        <ul class="header__navbar flex-row">
-            <li class="header__link"><a href="">link one</a></li>
-            <li class="header__link"><a href="">link two</a></li>
-            <li class="header__link"><a href="">link three</a></li>
+    <header class="container flex-row">
+        <div>
+            <h3>Odin Landing Page</h3>
+        </div>
+        <ul class="flex-row">
+            <li><a href="">link one</a></li>
+            <li><a href="">link two</a></li>
+            <li><a href="">link three</a></li>
         </ul>
     </header>
 
     <main>
-        <section class="hero flex-row center">
-            <div class="hero__info">
-                <h1 class="hero__main-txt">This website is awesome</h1>
-                <p class="hero__secondary-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
+        <section class="container flex-row padding-y">
+            <div class="flex-split-50">
+                <h1>This website is awesome</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
                     aperiam necessitatibus doloremque assumenda rerum voluptatum.</p>
-                <a class="btn" href="">Sign up</a>
+                <button class="hero-button">Sign up</button>
             </div>
-            <img src="https://unsplash.it/1366/768" alt="A place holder image from unsplash.">
-            <!-- <div class="hero__img">XXXX</div> -->
+            <img class="flex-split-50" src="https://unsplash.it/1366/768" alt="A place holder image from unsplash.">
         </section>
 
-        <section class="extra-info">
-            <p class="text">Some random information.</p>
-            <div class="extra-info__container flex-row center">
-                <div>
-                    <img class="extra--info__img" src="https://unsplash.it/300/300"
+        <section class="bg-white-100 padding-y">
+            <div class="container flex-row">
+                <h2 class="text-center flex-expand">Some random information.</h2>
+                <figure>
+                    <img class="blue-border" src=" https://unsplash.it/300/300"
                         alt="A place holder image from unsplash."></img>
-                    <caption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, neque.</caption>
-                </div>
-                <div>
-                    <img class="extra--info__img" src="https://unsplash.it/300/301"
+                    <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, neque.</caption>
+                </figure>
+                <figure>
+                    <img class="blue-border" src="https://unsplash.it/300/301"
                         alt="A place holder image from unsplash."></img>
-                    <caption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, neque.</caption>
-                </div>
-                <div>
-                    <img class="extra--info__img" src="https://unsplash.it/301/300"
+                    <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, neque.</caption>
+                </figure>
+                <figure>
+                    <img class="blue-border" src="https://unsplash.it/301/300"
                         alt="A place holder image from unsplash."></img>
-                    <caption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, neque.</caption>
-                </div>
-                <div>
-                    <img class="extra--info__img" src="https://unsplash.it/301/301"
+                    <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, neque.</caption>
+                </figure>
+                <figure>
+                    <img class="blue-border" src="https://unsplash.it/301/301"
                         alt="A place holder image from unsplash."></img>
-                    <caption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, neque.</caption>
-                </div>
+                    <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, neque.</caption>
+                </figure>
             </div>
         </section>
 
-        <section class="quote">
-            <div class="quote__container center">
+        <section class="bg-white-200 padding-y">
+            <div class="container">
                 <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, molestias adipisci esse,
                     consequatur
                     iste
                     impedit corrupti eligendi excepturi repudiandae atque cumque commodi nam consequuntur dolores nemo
                     eaque
                     corporis! Rem excepturi consequatur libero debitis facilis suscipit?</blockquote>
-                <footer>- Author, Person that said the quote</footer>
+                <p class="fg-blue-800 text-end fw-900">- Author, Person that said the quote</p>
             </div>
         </section>
 
-        <section class="cta">
-            <div class="cta__card flex-row">
-                <div class="left">
-                    <h3 class="cta__main-txt">Call to action! It's time!</h3>
-                    <p class="cta__secondary-txt">Sign up for our product by clicking that button right over there!</p>
+        <section class="bg-white-100 padding-y">
+            <div class="flex-row container bg-blue-400 cta">
+                <div>
+                    <h3>Call to action! It's time!</h3>
+                    <p>Sign up for our product by clicking that button right over there!</p>
                 </div>
-                <div class="right">
-                    <a class="btn" href="">Sign up</a>
-                </div>
+                <button class="white-border">Sign up</button>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <small> Copyright &copy; The Odin Project 2021</small>
+    <footer class="footer text-center">
+        <small>Copyright &copy; The Odin Project 2021</small>
     </footer>
 </body>
 

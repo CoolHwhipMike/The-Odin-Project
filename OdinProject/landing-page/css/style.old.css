@@ -1,0 +1,161 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap');
+
+/* Variables */
+:root {
+    --clr-white-100: hsl(220, 20%, 90%);
+    --clr-white-200: hsl(220, 13%, 80%);
+    --clr-blue-400: hsl(220, 91%, 60%);
+    --clr-blue-800: hsl(220, 28%, 20%);
+}
+
+/* Background and foreground */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--clr-blue-800);
+}
+
+.center {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+header a{
+    color: var(--clr-white-200);
+    font-size: 1.125rem;
+    margin-left: 30px;
+}
+
+header a:hover,
+header a:focus {
+    color: var(--clr-blue-400);
+}
+
+header div {
+    color: var(--clr-white-100);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+/* Hero  */
+.hero {
+
+    padding: 75px 0 125px 0;
+}
+
+.hero h1 {
+    color: var(--clr-white-100);
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.hero p {
+    color: var(--clr-white-200);
+}
+
+.hero img {
+    max-width: 50%;
+}
+
+.btn {
+    background: var(--clr-blue-400);
+    color: var(--clr-white-100);
+    padding: 0.5em 1.25em;
+    border-radius: 5px;
+}
+
+/* .btn:hover {
+    color: var(--clr-blue-400);
+    background: var(--clr-white-100);
+    transition: ease;
+    transition-duration: 50ms;
+} */
+
+/* Extra-info */
+.extra-info {
+    background: var(--clr-white-100);
+    color: var(--clr-blue-800);
+    padding: 50px 0 100px 0;
+}
+
+.extra-info p {
+    font-size: 2.25rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.extra-info > div {
+    gap: 50px;
+}
+
+.extra-info img {
+    border: 5px solid var(--clr-blue-400);
+    border-radius: 15px;
+}
+
+/* Quote Styling */
+.quote {
+    background: var(--clr-white-200);
+    color: var(--clr-blue-800);
+}
+.quote__container {
+    padding: 100px 0 100px 0;
+}
+
+.quote__container blockquote {
+    font-size: 2.25rem;
+    font-style: italic;
+}
+
+.quote__container footer {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: end;
+}
+
+/* CTA Styling */
+.cta {
+    padding: 100px;
+    background: var(--clr-white-100);
+}
+
+.cta__card {
+    border-radius: 10px;
+    padding: 50px;
+    background: var(--clr-blue-400);
+    max-width: 1000px;
+    margin: auto;
+}
+
+.cta__card a {
+    border: 2px solid var(--clr-white-200);
+}
+.cta__main-txt {
+    color: var(--clr-white-100);
+}
+.cta__secondary-txt {
+    color: var(--clr-white-200);
+}
+
+/* Footer Styling */
+.footer {
+    color: var(--clr-white-200);
+    text-align: center;
+    padding: 25px;
+}
