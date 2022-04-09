@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. Write a function called add7 that returns a number + 7.
+        // function expression
+        let add7Expression = function (num) {
+            return num + 7;
+        }
+
+        // fucntion declaration
+        function add7Declaration(num) {
+            return num + 7;
+        }
+
+        // arrow function
+        let add7Arrow = num => num + 7;
+
+        console.log(add7Expression(7));
+        console.log(add7Declaration(4));
+        console.log(add7Arrow(25));
+
+        // 2. Write a function called multiply that returns product of 2 numbers.
+        // function expression
+        let multExpression = function (n1, n2) {
+            return n1 * n2;
+        }
+
+        // function declaration
+        function multDeclaration(n1, n2) {
+            return n1 * n2;
+        }
+
+        // arrow function
+        let multArrow = (n1, n2) => n1 * n2;
+
+        console.log(multExpression(8, 4));
+        console.log(multDeclaration(6, 9));
+        console.log(multArrow(2, 5));
+
+        // 3. Write a function called capitalize that returns a string with only the first letter capatilized.
+        // function expression
+        // let string = asdf;
+        let capExpression = function (string) {
+            let first = string.slice(0, 1).toUpperCase();
+            let rest = string.slice(1).toLowerCase();
+            return first + rest;
+        }
+
+        // function declaration
+        function capDeclaration(string) {
+            return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
+        }
+
+        // arrow function
+        let capArrow = string => {
+            let first = string.substr(0, 1).toUpperCase();
+            let rest = string.substr(1).toLowerCase();
+            return first + rest;
+        }
+
+        console.log(capExpression("ALLUPPER"));
+        console.log(capExpression("alllower"));
+        console.log(capExpression("UPPeranDloWEr"));
+        console.log(capDeclaration("ALLUPPER"));
+        console.log(capDeclaration("alllower"));
+        console.log(capDeclaration("UPPeranDloWEr"));
+        console.log(capArrow("ALLUPPER"));
+        console.log(capArrow("alllower"));
+        console.log(capArrow("UPPeranDloWEr"));
+
+        // 4. Write a function called lastLetter that returns the last letter of a string.
+        // function expression
+        let lastExpression = function (string) {
+            return string.slice(string.length - 1);
+        }
+
+        // function declaration
+        function lastDeclaration(string) {
+            return string.charAt(string.length - 1);
+        }
+
+        // arrow function
+        let lastArrow = string => string[string.length - 1];
+
+        console.log(lastExpression('javascript'));
+        console.log(lastExpression('This is a whole sentance!'));
+        console.log(lastDeclaration('javascript'));
+        console.log(lastDeclaration('This is a whole sentance!'));
+        console.log(lastArrow('javascript'));
+        console.log(lastArrow('This is a whole sentance!'));
+
+    </script>
+</body>
+
+</html>
