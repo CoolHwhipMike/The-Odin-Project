@@ -19,7 +19,7 @@
 ## Second Iteration
 
 ### Goals
-1. [ ] Create a button for each selection.
-2. [ ] Use and event listener to make a selection and call playRound.
-3. [ ] Add a div to display results and change console.log to DOM methods.
-4. [ ] Display running score and announce a winner when a player get 5 points.
+1. [&check;] Create a button for each selection.
+2. [&check;] Use and event listener to make a selection and call playRound.
+3. [&check;] Add a div to display results and change console.log to DOM methods.
+4. [&check;] Display running score and announce a winner when a player gets 5 points.
