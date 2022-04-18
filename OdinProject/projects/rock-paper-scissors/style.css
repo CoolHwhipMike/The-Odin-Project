@@ -1,0 +1,95 @@
+/* variables */
+:root {
+    --gradient1: linear-gradient(
+        45deg,
+        /* hsl(55, 91%, 54%), */
+        hsl(60, 91%, 54%),
+        hsl(65, 91%, 54%),
+        hsl(75, 98%, 41%),
+        hsl(85, 98%, 41%)
+        /* hsl(95, 98%, 41%) */
+        );
+
+--gradient2: linear-gradient(
+        45deg,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+        );
+}
+
+/* general */
+body {
+    background-color: cadetblue;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+button {
+    border: none;
+    padding: 0.75rem 1.75rem;
+}
+
+/* title styling */
+.title {
+    text-align: center;
+    /* padding-bottom: 1rem; */
+}
+
+/* selection button */
+.btnRock,
+.btnPaper,
+.btnScissors {
+    padding: 0;
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: var(--gradient1);
+    background-size: 300%;
+    background-position: left;
+    animation: bg-animation 15s infinite alternate;
+    /* transition: background-position 1s; */
+}
+
+.btnRock:hover,
+.btnPaper:hover,
+.btnScissors:hover,
+.btnRock:focus,
+.btnPaper:focus,
+.btnScissors:focus {
+    cursor: pointer;
+    /* background-image: var(--gradient2);
+    background-size: 300%;
+    background-position: left;
+    animation: bg-animation 15s infinite alternate; */
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+/* utilities */
+.container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 2.5rem;
+}

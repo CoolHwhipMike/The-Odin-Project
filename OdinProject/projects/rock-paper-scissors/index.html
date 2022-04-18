@@ -3,21 +3,67 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+    <title>Rock Paper Scissors</title>
 </head>
 
 <body>
-    <button id="btnRock">Rock</button>
-    <button id="btnPaper">Paper</button>
-    <button id="btnScissors">Scissors</button>
+    <h1 class="title">Rock / Paper / Scissors</h1>
 
-    <div id="divResults"></div>
+    <div class="container">
+        <button class="openModal">How to Play</button>
+        <button class="btnReset">Reset</button>
+    </div>
 
-    <div id="divScore"></div>
+    <div class="scoreArea container">
+        <div>
+            <h2>Player Score</h2>
+            <div class="playerScoreOutput">0</div>
+        </div>
+        <div>
+            <h2>Round</h2>
+            <div class="roundCountOutput">0</div>
+        </div>
+        <div>
+            <h2>Computer Score</h2>
+            <div class="computerScoreOutput">0</div>
+        </div>
+    </div>
 
-    <script src="./main.js"></script>
+    <div class="playArea container">
+        <div>
+            <h2>Player Choice</h2>
+            <div class="userPlayOutput">-</div>
+        </div>
+        <div>
+            <h2>Computer Choice</h2>
+            <div class="computerPlayOutput">-</div>
+        </div>
+    </div>
+
+    <div class="selectionArea container">
+        <button class="btnRock">Rock</button>
+        <button class="btnPaper">Paper</button>
+        <button class="btnScissors">Scissors</button>
+    </div>
+
+    <dialog class="modal">
+        <h3>How to Play</h3>
+        <ul>
+            <li>Click on "Rock", "Paper", or "Scissors" to select your choice.</li>
+            <li>The winner will be displayed and your score will be updated.</li>
+            <li>First to 5 wins.</li>
+        </ul>
+        <h3>Rules</h3>
+        <ol>
+            <li>Rock beats Paper.</li>
+            <li>Paper beats Rock.</li>
+            <li>Scissors beats Paper.</li>
+        </ol>
+        <button class="closeModal">Close</button>
+    </dialog>
 </body>
 
 </html>
