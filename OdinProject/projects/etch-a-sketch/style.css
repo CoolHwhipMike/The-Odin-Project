@@ -1,0 +1,14 @@
+.container {
+    width: 700px;
+    height: 700px;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+}
+
+.gridUnit {
+    /* height: 30px; */
+    /* width: 30px; */
+    background-color: white;
+    border: 1px solid black; 
+}
