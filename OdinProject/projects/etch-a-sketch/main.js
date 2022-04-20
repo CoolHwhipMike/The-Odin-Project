@@ -9,6 +9,7 @@ const change = document.querySelector(".change");
 
 // Making the initial grid
 createGrid();
+allowColoring();
 
 //-----------//
 // Functions //
@@ -37,6 +38,20 @@ function resetGrid() {
         container.removeChild(container.firstChild);
     };
 }
+// This seems like a bad way to do this, 
+// I need to revisit this to see why I had to set
+// this up this way.
+
+// Fill the grid on mouse over
+function allowColoring() {
+    const coloredDiv = document.querySelectorAll(".gridUnit");
+    coloredDiv.forEach(unit => unit.addEventListener("mouseover", fillIn));
+}
+
+// A function to fill the grid units
+function fillIn() {
+    this.setAttribute("style", "background-color: black;");
+}
 
 //-----------------//
 // Event Listeners //
@@ -46,6 +61,7 @@ function resetGrid() {
 reset.addEventListener("click", () => {
     resetGrid();
     createGrid();
+    allowColoring();
 });
 
 // Change the size of the grid
@@ -55,22 +71,5 @@ change.addEventListener("click", () => {
 
     resetGrid();
     createGrid(gridRows, gridColumns);
+    allowColoring()
 });
-
-let coloredDiv = document.getElementsByClassName("gridUnit");
-
-function test() {
-    for (node of coloredDiv) {
-        node.addEventListener("click", () => {
-            // node.setAttribute("style", "background-color: black;");
-            console.log(node);
-        });
-    };
-}
-test();
-
-
-
-// this.addEventListener("click", () => {
-//     console.log(this);
-// })
