@@ -1,12 +1,12 @@
 # The Odin Project - Calculator
 
 ## Goals
-1. [ ] Create functions for: 
+1. [&check;] Create functions for: 
     - add
     - subtract
     - multiply
     - divide
-2. [ ] Create a function *operate* that takes an operator and 2 numbers, then calls a function from 1.
+2. [&check;] Create a function *operate* that takes an operator and 2 numbers, then calls a function from 1.
 3. [ ] Create a basic HTML calculator with: 
     - buttons for each digit, operator, clear, and equals.
     - a display
