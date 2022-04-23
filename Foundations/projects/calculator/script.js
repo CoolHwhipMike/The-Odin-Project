@@ -1,4 +1,6 @@
-// FUNCTIONS //
+// ========================================= //
+// =============== FUNCTIONS =============== //
+// ========================================= //
 
 // Addition
 function add(num1, num2) {
@@ -20,7 +22,7 @@ function divide(num1, num2) {
     return num1 / num2;
 }
 
-// Operator (Symbol)
+// Operator
 // This may need to convert to string or number.
 function operate(operator, num1, num2) {
     switch (operator) {
@@ -39,7 +41,17 @@ function operate(operator, num1, num2) {
     };
 }
 
-console.log(operate('+', 5, 5));
-console.log(operate('-', 5, 5));
-console.log(operate('*', 5, 5));
-console.log(operate('/', 5, 5));
+// ========================================= //
+// ============ Event Listeners ============ //
+// ========================================= //
+
+// const buttons = document.querySelectorAll(".btn");
+// buttons.forEach(button => button.addEventListener("click", getData));
+// let number = '';
+
+// // A function to fill the grid units
+// function getData() {
+//     number += this.innerHTML;
+//     // console.log(number);
+
+// }

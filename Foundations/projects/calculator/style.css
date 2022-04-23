@@ -8,23 +8,29 @@
 }
 
 .display {
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: right;
     grid-column: 1 / 5;
-    background-color: blueviolet;
-    padding: 1.5em 1em;
-}
-
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1.5em 1em;
-    background-color: darkcyan;
+    background-color: darkgray;
+    padding: 0.5em;
 }
 
 .equals {
     grid-column: 3 / 5;
+}
+
+.btn {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5em;
+    background-color: cadetblue;
+}
+
+.btn:hover {
+    background-color: darkcyan;
 }
