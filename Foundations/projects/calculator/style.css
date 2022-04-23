@@ -1,0 +1,30 @@
+.container {
+    max-width: 400px;
+    height: 600px;
+    margin: 20% auto;
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    grid-column: 1 / 5;
+    background-color: blueviolet;
+    padding: 1.5em 1em;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5em 1em;
+    background-color: darkcyan;
+}
+
+.equals {
+    grid-column: 3 / 5;
+}
