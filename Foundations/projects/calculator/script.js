@@ -1,4 +1,18 @@
 // ========================================= //
+// =============== Variables =============== //
+// ========================================= //
+
+let number1 = '';
+let number2 = '';
+let operation = '';
+
+const bigDisplay = document.querySelector(".bigDisplay");
+const smallDisplay = document.querySelector(".smallDisplay");
+
+const buttons = document.querySelectorAll(".btn");
+buttons.forEach(button => button.addEventListener("click", getInput));
+
+// ========================================= //
 // =============== FUNCTIONS =============== //
 // ========================================= //
 
@@ -45,13 +59,44 @@ function operate(operator, num1, num2) {
 // ============ Event Listeners ============ //
 // ========================================= //
 
-// const buttons = document.querySelectorAll(".btn");
-// buttons.forEach(button => button.addEventListener("click", getData));
-// let number = '';
 
-// // A function to fill the grid units
-// function getData() {
-//     number += this.innerHTML;
-//     // console.log(number);
 
-// }
+
+
+function getInput() {
+    if (this.innerHTML === '=') {
+        let result = operate(operation, Number(number1), Number(number2));
+        smallDisplay.textContent = `${number1} ${operation} ${number2} =`;
+        bigDisplay.textContent = result;
+        number1 = '';
+        number2 = '';
+        operation = '';
+        return;
+    }
+    if (this.innerHTML === '+' || this.innerHTML === '-' || this.innerHTML === '*' || this.innerHTML === '/') {
+        if (operation !== '') {
+            let result = operate(operation, Number(number1), Number(number2));
+            bigDisplay.textContent = '';
+            number1 = result;
+            number2 = '';
+            operation = '';
+        }
+
+        operation = this.innerHTML;
+        smallDisplay.textContent = `${number1} ${operation}`;
+        bigDisplay.textContent = '';
+        return;
+    }
+
+    if (operation === '') {
+        smallDisplay.textContent = '';
+        number1 += this.innerHTML;
+        bigDisplay.textContent = number1;
+    }
+
+    if (operation !== '') {
+        number2 += this.innerHTML;
+        bigDisplay.textContent = number2;
+    }
+
+}
