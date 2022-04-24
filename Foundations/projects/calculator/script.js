@@ -1,9 +1,10 @@
-// ========================================= //
-// =============== Variables =============== //
-// ========================================= //
+// ========================================================================= //
+// =============================== VARIABLES =============================== //
+// ========================================================================= //
 
 let number1 = '';
 let number2 = '';
+let runningTotal = '';
 let operation = '';
 
 const bigDisplay = document.querySelector(".bigDisplay");
@@ -12,9 +13,11 @@ const smallDisplay = document.querySelector(".smallDisplay");
 const buttons = document.querySelectorAll(".btn");
 buttons.forEach(button => button.addEventListener("click", getInput));
 
-// ========================================= //
-// =============== FUNCTIONS =============== //
-// ========================================= //
+// ========================================================================= //
+// =============================== FUNCTIONS =============================== //
+// ========================================================================= //
+
+// Core Math Functions
 
 // Addition
 function add(num1, num2) {
@@ -36,8 +39,10 @@ function divide(num1, num2) {
     return num1 / num2;
 }
 
+// Helper Functions
+
 // Operator
-// This may need to convert to string or number.
+// TODO This may need to convert to string or number.
 function operate(operator, num1, num2) {
     switch (operator) {
         case '+':
@@ -55,12 +60,7 @@ function operate(operator, num1, num2) {
     };
 }
 
-// ========================================= //
-// ============ Event Listeners ============ //
-// ========================================= //
-
-
-
+// Equals
 
 
 function getInput() {
