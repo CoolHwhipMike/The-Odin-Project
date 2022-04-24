@@ -16,7 +16,7 @@
     - store successive operators and numbers
     - call *operate* when equals is pressed
     - update the display
-6. [ ] Gotchas:
+6. [&check;] Gotchas:
     - perform 1 operation at a time
     - round long decimals
     - clear really clears everything
