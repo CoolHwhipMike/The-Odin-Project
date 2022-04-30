@@ -1,0 +1,2 @@
+## What are the 3 values defined in the shorthand flex property (e.g. flex: 1 1 auto)?
+They're flex-grow (how fast the element grows), flex-shrink (how fast the element shrinks), and flex-basis (the prefered width).
