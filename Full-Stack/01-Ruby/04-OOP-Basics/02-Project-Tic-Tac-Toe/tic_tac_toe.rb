@@ -40,15 +40,20 @@ class Player
   end
 end
 
-def game_check(game)
-  true if (game.data['1'] == game.data['2'] && game.data['1'] == game.data['3']) ||
-          (game.data['4'] == game.data['5'] && game.data['4'] == game.data['6']) ||
-          (game.data['7'] == game.data['8'] && game.data['7'] == game.data['9']) ||
-          (game.data['1'] == game.data['4'] && game.data['1'] == game.data['7']) ||
-          (game.data['2'] == game.data['5'] && game.data['2'] == game.data['8']) ||
-          (game.data['3'] == game.data['6'] && game.data['3'] == game.data['9']) ||
-          (game.data['1'] == game.data['5'] && game.data['1'] == game.data['9']) ||
-          (game.data['3'] == game.data['5'] && game.data['3'] == game.data['7'])
+def is_winner?(game)
+  # win conditions for rows
+  (game.data['1'] == game.data['2'] && game.data['1'] == game.data['3']) ||
+    (game.data['4'] == game.data['5'] && game.data['4'] == game.data['6']) ||
+    (game.data['7'] == game.data['8'] && game.data['7'] == game.data['9']) ||
+
+    # win conditions for columns
+    (game.data['1'] == game.data['4'] && game.data['1'] == game.data['7']) ||
+    (game.data['2'] == game.data['5'] && game.data['2'] == game.data['8']) ||
+    (game.data['3'] == game.data['6'] && game.data['3'] == game.data['9']) ||
+
+    # win conditions for diagonals
+    (game.data['1'] == game.data['5'] && game.data['1'] == game.data['9']) ||
+    (game.data['3'] == game.data['5'] && game.data['3'] == game.data['7'])
 end
 
 def play_game
@@ -68,13 +73,13 @@ def play_game
     marker = current_player.marker
     game.update_board(location, marker)
 
-    if game_check(game)
+    if is_winner?(game)
       rounds = 0
     else
       rounds -= 1
     end
   end
-  if game_check(game)
+  if is_winner?(game)
     puts "#{current_player.name} Wins!"
   else
     puts "It's a tie."
