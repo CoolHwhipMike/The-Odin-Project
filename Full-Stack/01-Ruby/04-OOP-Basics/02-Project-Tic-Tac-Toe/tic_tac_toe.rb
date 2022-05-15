@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 # Creates and manages the board
-
 class Board
   attr_accessor :data
 
@@ -41,9 +40,7 @@ class Player
   end
 end
 
-# "#{current_player.name} Wins!"
 def game_check(game)
-  # return "It's a tie." if rounds.zero?
   true if (game.data['1'] == game.data['2'] && game.data['1'] == game.data['3']) ||
           (game.data['4'] == game.data['5'] && game.data['4'] == game.data['6']) ||
           (game.data['7'] == game.data['8'] && game.data['7'] == game.data['9']) ||
