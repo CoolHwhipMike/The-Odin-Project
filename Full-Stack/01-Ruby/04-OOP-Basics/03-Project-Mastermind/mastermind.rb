@@ -1,41 +1,64 @@
 # frozen_string_literal: true
 
-def generate_code
-  colors = %w[r g y b m c]
-  code = []
-
-  4.times { code.push(colors.sample) }
-  code
-end
-
-def check_guess
-  current_code = generate_code
-  current_guess = []
-  rounds = 12
-  ##################################### this works but is junk
-  4.times { current_guess.push(gets.chomp) }
-
-  p current_code
-  p current_guess
-  while rounds.positive?
-
-    break if current_guess == current_code
-
-    current_guess.each_with_index do |element, index|
-      if element == current_code[index]
-        puts 'correct'
-      elsif current_code.any?(element)
-        puts 'wrong position'
-      else
-        puts 'wrong'
-      end
+module Mastermind
+  # CLass that generates a game and desired players
+  class Game
+    def initialize
+      @player1 = Human.new
+      @player2 = Computer.new
     end
 
-    current_guess.clear
-    4.times { current_guess.push(gets.chomp) }
-    rounds -= 1
+    def check_guess
+      @current_code = @player2.generate_code
+      @rounds = 12
+      @current_guess = gets.chomp.split('')
 
+      while @rounds.positive?
+        p @current_code
+        p @current_guess
+
+        break if @current_guess == @current_code
+
+        @current_guess.each_with_index do |element, index|
+          if element == @current_code[index]
+            puts 'correct'
+          elsif @current_code.any?(element)
+            puts 'wrong position'
+          else
+            puts 'wrong'
+          end
+        end
+
+        @current_guess.clear
+        @current_guess = gets.chomp.split('')
+        @rounds -= 1
+
+      end
+    end
+  end
+
+  # Human player class
+  class Human
+    attr_reader :name
+
+    def initialize
+      @name = gets.chomp
+    end
+  end
+
+  # Computer player class
+  class Computer
+    attr_reader :code
+
+    def generate_code
+      colors = %w[r g y b m c]
+      code = []
+
+      4.times { code.push(colors.sample) }
+      code
+    end
   end
 end
 
-check_guess
+include Mastermind
+Game.new.check_guess
