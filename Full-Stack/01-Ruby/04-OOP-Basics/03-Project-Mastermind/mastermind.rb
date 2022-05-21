@@ -2,11 +2,16 @@
 
 module Mastermind
   # Human player class
-  class Player
-    attr_reader :name
+  class Human
+    attr_reader :role, :code
 
     def initialize
-      @name = gets.chomp
+      print 'Do you want to (m)ake or (b)reak the code? '
+      @role = gets.chomp
+    end
+
+    def generate_code
+      @code = gets.chomp.split('')
     end
   end
 
@@ -26,14 +31,23 @@ module Mastermind
   # Class that generates a game and desired players
   class Game
     def initialize
-      @player1 = Player.new
+      @player1 = Human.new
       @player2 = Computer.new
-      @current_code = @player2.generate_code
+
+      @current_code = if @player1.role == 'm'
+                        @player1.generate_code
+                      else
+                        @player2.generate_code
+                      end
       @rounds = 12
     end
 
     def guess
-      @current_guess = gets.chomp.split('')
+      @current_guess = if @player1.role == 'm'
+                         @player2.generate_code
+                       else
+                         @player1.generate_code
+                       end
     end
 
     def check_guess
@@ -49,10 +63,23 @@ module Mastermind
     end
 
     def show_result
-      if @current_guess == @current_code
-        puts 'You guessed the code!'
-      else
-        puts 'Sorry, you lost.'
+      if @player1.role == 'm'
+        if @current_guess == @current_code
+          puts
+          puts 'Sorry, you lost.'
+        else
+          puts
+          puts 'You beat the computer!'
+        end
+      end
+      if @player1.role == 'b'
+        if @current_guess == @current_code
+          puts
+          puts 'You guessed the code!'
+        else
+          puts
+          puts 'Sorry, you lost.'
+        end
       end
     end
 
