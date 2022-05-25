@@ -24,13 +24,13 @@
 - store form letter template
 - put letters in a file
 
-## Iteration 5
+## Assignment 1
 - clean up the phone numbers
 - check for bad phone numbers
 - check for missing phone numbers
 
-## Iteration 6
+## Assignment 2
 - target certain times
 
-## Iteration 7
+## Assignment 3
 - target certain days
