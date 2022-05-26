@@ -3,6 +3,7 @@
 require 'csv'
 require 'google/apis/civicinfo_v2'
 require 'erb'
+require 'time'
 
 def clean_zipcode(zipcode)
   zipcode.to_s.rjust(5, '0')[0..4]
@@ -17,6 +18,20 @@ def clean_homephone(phone_number)
     phone_number
   else
     '0000000000'
+  end
+end
+
+def target_time
+  times = []
+
+  contents.each do |row|
+    times.push(Time.strptime(row[:regdate], '%m/%d/%y %k:%M').hour)
+  end
+
+  total = times.reduce({}) do |hash, num|
+    hash[num] ||= 0
+    hash[num] += 1
+    hash
   end
 end
 
@@ -45,7 +60,7 @@ def save_thank_you_letter(id, form_letter)
   end
 end
 
-################################ TEST ASSIGNMENTS ################################
+puts 'EventManager initialized.'
 
 contents = CSV.open(
   'event_attendees.csv',
@@ -53,31 +68,16 @@ contents = CSV.open(
   header_converters: :symbol
 )
 
+template_letter = File.read('form_letter.erb')
+erb_template = ERB.new template_letter
+
 contents.each do |row|
+  id = row[0]
   name = row[:first_name]
+  zipcode = clean_zipcode(row[:zipcode])
+  legislators = legislators_by_zipcode(zipcode)
 
+  form_letter = erb_template.result(binding)
+
+  save_thank_you_letter(id, form_letter)
 end
-
-##################################################################################
-
-# puts 'EventManager initialized.'
-
-# contents = CSV.open(
-#   'event_attendees.csv',
-#   headers: true,
-#   header_converters: :symbol
-# )
-
-# template_letter = File.read('form_letter.erb')
-# erb_template = ERB.new template_letter
-
-# contents.each do |row|
-#   id = row[0]
-#   name = row[:first_name]
-#   zipcode = clean_zipcode(row[:zipcode])
-#   legislators = legislators_by_zipcode(zipcode)
-
-#   form_letter = erb_template.result(binding)
-
-#   save_thank_you_letter(id, form_letter)
-# end
