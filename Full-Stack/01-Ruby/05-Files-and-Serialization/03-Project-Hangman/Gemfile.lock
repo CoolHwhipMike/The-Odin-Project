@@ -2,12 +2,14 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorize (0.8.1)
+    msgpack (1.5.2)
 
 PLATFORMS
   amd64-freebsd-13
 
 DEPENDENCIES
   colorize
+  msgpack
 
 BUNDLED WITH
    2.3.14

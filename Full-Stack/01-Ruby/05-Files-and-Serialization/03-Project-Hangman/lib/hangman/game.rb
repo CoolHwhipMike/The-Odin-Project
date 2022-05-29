@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'colorize'
+require 'msgpack'
 require_relative 'display'
 
 # Game class that contains the hangman logic.
@@ -18,7 +19,7 @@ class Game
   end
 
   def enter_user_guess
-    print 'Enter your guess: '
+    print 'Enter your guess (or type "save"): '
     gets.chomp.downcase
   end
 
@@ -50,6 +51,10 @@ class Game
 
     while @misses.length < 6
       @user_guess = enter_user_guess
+      if @user_guess == 'save'
+        save_game
+        exit
+      end
       check_guess(@secret_word, @user_guess, @hits, @misses)
       update_display(@hits, @misses)
       break if @hits.none?('_')
@@ -65,7 +70,7 @@ class Game
     when '2'
       play_game
     when '3'
-      puts 'load'
+      load_game
     when '4'
       exit
     else
@@ -75,5 +80,29 @@ class Game
       puts '###########################'.red
       puts
     end
+  end
+
+  def save_game
+    contents = MessagePack.dump({
+                              secret_word: @secret_word,
+                              hits: @hits,
+                              misses: @misses
+                            })
+    file = File.open('save_file', 'w')
+    file.write contents
+    file.close
+  end
+
+  def load_game
+    file = File.open('save_file', 'r')
+    contents = MessagePack.unpack(file)
+    @secret_word = contents['secret_word']
+    @hits = contents['hits']
+    @misses = contents['misses']
+    print @secret_word
+    puts
+    print @hits
+    puts
+    print @misses
   end
 end
