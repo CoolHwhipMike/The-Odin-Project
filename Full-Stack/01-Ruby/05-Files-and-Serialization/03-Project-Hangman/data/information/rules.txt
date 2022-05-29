@@ -1,0 +1,10 @@
+The goal of Hangman is to guess the secret word.
+
+In this version, the computer picks a random word between 5 and 12 characters.
+
+The player then enters a letter. If the letter is in the secret word, all
+occurences are revealed. 
+
+If the guess is incorrect, the letter is added to the 'misses' list. 
+
+The player gets up to 5 misses, at which point the game ends.
