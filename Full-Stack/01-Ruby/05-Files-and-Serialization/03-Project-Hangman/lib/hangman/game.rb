@@ -3,13 +3,18 @@
 require 'colorize'
 require 'msgpack'
 require_relative 'display'
+require_relative 'menu'
+require_relative 'save_load'
 
 # Game class that contains the hangman logic.
 class Game
   include Display
+  include Menu
+  include SaveLoad
 
   def initialize
-    start_screen
+    welcome_message
+    menu
     menu_navigation(@menu_selection)
   end
 
@@ -44,9 +49,9 @@ class Game
   end
 
   def play_game
-    @secret_word = create_secret_word
-    @hits = Array.new(@secret_word.length, '_')
-    @misses = []
+    @secret_word ||= create_secret_word
+    @hits ||= Array.new(@secret_word.length, '_')
+    @misses ||= []
     update_display(@hits, @misses)
 
     while @misses.length < 6
@@ -61,48 +66,5 @@ class Game
     end
 
     check_win(@hits)
-  end
-
-  def menu_navigation(menu_selection)
-    case menu_selection
-    when '1'
-      puts File.read('data/information/rules.txt')
-    when '2'
-      play_game
-    when '3'
-      load_game
-    when '4'
-      exit
-    else
-      puts
-      puts '###########################'.red
-      puts 'Please enter a number 1 - 4'.red
-      puts '###########################'.red
-      puts
-    end
-  end
-
-  def save_game
-    contents = MessagePack.dump({
-                              secret_word: @secret_word,
-                              hits: @hits,
-                              misses: @misses
-                            })
-    file = File.open('save_file', 'w')
-    file.write contents
-    file.close
-  end
-
-  def load_game
-    file = File.open('save_file', 'r')
-    contents = MessagePack.unpack(file)
-    @secret_word = contents['secret_word']
-    @hits = contents['hits']
-    @misses = contents['misses']
-    print @secret_word
-    puts
-    print @hits
-    puts
-    print @misses
   end
 end
