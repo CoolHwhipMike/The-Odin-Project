@@ -10,6 +10,14 @@ module Display
     puts 'Thanks for Playing!'.yellow
   end
 
+  def win_message
+    puts 'You Win!'
+  end
+
+  def lose_message
+    puts 'Sorry, You Lost.'
+  end
+
   def update_display(hits, misses)
     print "#{hits}\n"
     puts 'misses'

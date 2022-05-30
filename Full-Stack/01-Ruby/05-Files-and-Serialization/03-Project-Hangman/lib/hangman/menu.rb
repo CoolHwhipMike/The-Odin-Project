@@ -16,6 +16,8 @@ module Menu
     case menu_selection
     when '1'
       puts File.read('data/information/rules.txt')
+      menu
+      menu_navigation(@menu_selection)
     when '2'
       play_game
     when '3'

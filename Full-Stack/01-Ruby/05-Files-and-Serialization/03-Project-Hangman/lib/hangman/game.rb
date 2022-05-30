@@ -8,8 +8,8 @@ require_relative 'save_load'
 
 # Game class that contains the hangman logic.
 class Game
-  include Display
   include Menu
+  include Display
   include SaveLoad
 
   def initialize
@@ -19,17 +19,19 @@ class Game
   end
 
   def create_secret_word
-    @dictionary = File.readlines('data/word_lists/word_list.txt', chomp: true)
-    @dictionary.select { |word| word.length > 5 && word.length < 12 }.sample.chars
+    File.readlines('data/word_lists/word_list.txt', chomp: true)
+        .select { |word| word.length > 5 && word.length < 12 }
+        .sample.downcase.chars
   end
 
   def enter_user_guess
-    print 'Enter your guess (or type "save"): '
+    print 'Enter your guess (or type "save or quit"): '
     gets.chomp.downcase
   end
 
   def check_guess(secret_word, user_guess, hits, misses)
     @match = false
+
     secret_word.each_with_index do |letter, index|
       if user_guess == letter
         hits[index] = letter
@@ -42,9 +44,21 @@ class Game
 
   def check_win(hits)
     if hits.none? { |letter| letter == '_' }
-      puts 'You win'
+      win_message
     else
-      puts 'You lose'
+      lose_message
+    end
+  end
+
+  def special_guess(user_guess)
+    case user_guess
+    when 'save'
+      save_game
+      exit_message
+      exit
+    when 'quit'
+      exit_message
+      exit
     end
   end
 
@@ -52,16 +66,16 @@ class Game
     @secret_word ||= create_secret_word
     @hits ||= Array.new(@secret_word.length, '_')
     @misses ||= []
+
     update_display(@hits, @misses)
 
     while @misses.length < 6
       @user_guess = enter_user_guess
-      if @user_guess == 'save'
-        save_game
-        exit
-      end
+
+      special_guess(@user_guess)
       check_guess(@secret_word, @user_guess, @hits, @misses)
       update_display(@hits, @misses)
+
       break if @hits.none?('_')
     end
 
