@@ -25,8 +25,23 @@ class Game
   end
 
   def enter_user_guess
-    print 'Enter your guess (or type "save or quit"): '
-    gets.chomp.downcase
+    print 'Enter your guess (or type "save" or "quit"): '
+    @guess = gets.chomp.downcase
+    validate_guess
+  end
+
+  def validate_guess
+    if @guess.length != 1 && (@guess != 'save' || @guess != 'quit')
+      puts 'Please enter a single character, "save" or "quit".'
+      enter_user_guess
+    end
+
+    if @misses.include?(@guess) || @hits.include?(@guess)
+      puts 'Please try a different letter.'
+      enter_user_guess
+    end
+
+    @guess
   end
 
   def check_guess(secret_word, user_guess, hits, misses)
