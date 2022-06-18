@@ -2,36 +2,107 @@
 
 # Class for the list as a whole
 class LinkedList
-  # attr_accessor :current_node
+  attr_accessor :head
 
   def initialize
     @head = nil
-    @len = 0
+  end
+
+  def append(value)
+    @node = @head
+    until @node.nil?
+      @previous_node = @node
+      @node = @node.next_node
+    end
+    @node = Node.new(value, nil)
+    @previous_node.next_node = @node
   end
 
   def prepend(value)
-    new_node = Node.new(value, @head)
-    @head = new_node
-    @len += 1
+    @head = Node.new(value, @head)
   end
 
   def size
-    @len
+    @count = 0
+    @node = @head
+
+    until @node.nil?
+      @count += 1
+      @node = @node.next_node
+    end
+
+    puts count
   end
 
-  # def append(value)
-  #   # @head = @next_node until @next_node.nil?
-  #   while @head != nil
-  #     @head = @next_node
-  #   end
-  #   current_node = Node.new(value, @head)
-  #   @head = current_node
-  #   @len += 1
-  # end
+  def first
+    puts @head.value
+  end
+
+  def last
+    @node = @head
+    @node = @node.next_node until @node.next_node.nil?
+    puts @node.value
+  end
+
+  def at(value)
+    @index = 0
+    @node = @head
+
+    while @index < value
+      @node = @node.next_node
+      @index += 1
+    end
+
+    puts @node.value
+  end
+
+  def pop
+    @node = @head
+    until @node.next_node.nil?
+      @previous_node = @node
+      @node = @node.next_node
+    end
+    @previous_node.next_node = nil
+  end
+
+  def contains?(value)
+    @node = @head
+    until @node.nil?
+      return true if @node.value == value
+
+      @node = @node.next_node
+    end
+
+    false
+  end
+
+  def find(value)
+    @node = @head
+    @index = 0
+    until @node.nil?
+      return puts @index if @node.value == value
+
+      @node = @node.next_node
+      @index += 1
+    end
+
+    nil
+  end
+
+  def to_s
+    @node = @head
+    until @node.nil?
+      print "#{@node.value} -> "
+      @node = @node.next_node
+    end
+    print "nil\n"
+  end
 end
 
 # Class that generates each item in the list
 class Node
+  attr_accessor :value, :next_node
+
   def initialize(value, next_node)
     @value = value
     @next_node = next_node
@@ -39,11 +110,13 @@ class Node
 end
 
 ll = LinkedList.new
-p ll
-puts
 ll.prepend(10)
-p ll
-puts
-ll.prepend(30)
-p ll
-puts
+ll.append(20)
+ll.append(30)
+ll.append(40)
+ll.to_s
+ll.find(50)
+# ll.size
+# ll.first
+# ll.last
+# ll.at(2)

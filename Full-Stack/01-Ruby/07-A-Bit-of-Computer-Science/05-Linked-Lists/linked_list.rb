@@ -63,6 +63,14 @@ class LinkedList
     false
   end
 
+  def to_s
+    node = head
+    until node.nil?
+      puts "#{node.value} - #{node.next_node.value}"
+      node = node.next_node
+    end
+  end
+
   # class for each node
   class Node
     attr_accessor :value, :next_node
@@ -79,6 +87,8 @@ ll.append(10)
 ll.append(20)
 ll.prepend(30)
 
-puts ll.head.value
-puts ll.head.next_node.value
-p ll
+# puts ll.head.value
+# puts ll.head.next_node.value
+# p ll
+
+ll.to_s
