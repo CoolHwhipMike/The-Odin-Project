@@ -1,16 +1,5 @@
 # frozen_string_literal: true
 
-# class for each node in the tree
-class Node
-  attr_accessor :data, :left, :right
-
-  def initialize(data)
-    @data = data
-    @left = nil
-    @right = nil
-  end
-end
-
 # class for the tree
 class Tree
   attr_accessor :root
@@ -33,18 +22,15 @@ class Tree
 
   def insert(value, node = @root)
     if value < node.data
-      if node.left.nil?
-        node.left = Node.new(value)
-      else
-        insert(value, node.left)
-      end
+      node.left.nil? ? node.left = Node.new(value) : insert(value, node.left)
     elsif value > node.data
-      if node.right.nil?
-        node.right = Node.new(value)
-      else
-        insert(value, node.right)
-      end
+      node.right.nil? ? node.right = Node.new(value) : insert(value, node.right)
     end
+  end
+
+  def delete(value)
+    node = find(value)
+    node.data = nil
   end
 
   def find(value, node = @root)
@@ -55,7 +41,8 @@ class Tree
     elsif value > node.data
       find(value, node.right)
     else
-      puts "Node: #{node} Data: #{node.data}"
+      # puts "Node: #{node} Data: #{node.data}"
+      node
     end
   end
 
@@ -77,10 +64,3 @@ class Tree
     pretty_print(node.left, "#{prefix}#{is_left ? '    ' : '│   '}", true) if node.left
   end
 end
-
-# test_arr = [1, 7, 4, 23, 8, 9, 4, 3, 5, 7, 9, 67, 6345, 324]
-test_arr = [20, 30, 50, 70, 80, 85, 75, 60, 65, 40, 32, 34, 38]
-
-t = Tree.new((Array.new(15) { rand(1..100) }))
-t.pretty_print
-# t.depth(180)
