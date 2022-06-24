@@ -9,5 +9,5 @@ test_arr = [20, 30, 50, 70, 80, 85, 75, 60, 65, 40, 32, 34, 38]
 # t = Tree.new((Array.new(15) { rand(1..100) }))
 t = Tree.new(test_arr)
 t.pretty_print
-t.delete(20)
-t.pretty_print
+# t.level_order { |item| puts item.data }
+# t.level_order { |queue| queue.each { |item| puts item.data } }
