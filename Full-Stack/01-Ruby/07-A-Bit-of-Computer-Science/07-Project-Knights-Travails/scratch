@@ -1,0 +1,37 @@
+
+
+# # Each square (node) on the board
+# class Square
+#   attr_accessor :row
+#   def initialize(row, column, moves = nil)
+#     @row = row
+#     @column = column
+#     @moves = moves
+#   end
+# end
+
+def print_board(size)
+  id = 1
+  # size.times do
+  #   size.times do
+  #     id < 10 ? (print "0#{id}  ") : (print "#{id}  ")
+  #     id += 1
+  #   end
+  #   puts
+  #   puts
+  # end
+  board = []
+  for row in 0...size
+    for column in 0...size
+      print column
+      test = Square.new(row, column)
+      square = [row, column]
+      board.push(test)
+    end
+    puts
+  end
+  board
+end
+
+b = print_board(8)
+puts b.test.row
