@@ -31,5 +31,5 @@ class Cipher
   end
 end
 
-test = Cipher.new('abc', 2)
-puts test.do_shift
+# test = Cipher.new('abc', 2)
+# puts test.do_shift
