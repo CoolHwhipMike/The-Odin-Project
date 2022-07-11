@@ -6,7 +6,6 @@ class Board
 
   def initialize
     generate_board
-    draw_board
   end
 
   def generate_board
@@ -15,15 +14,18 @@ class Board
   end
 
   def draw_board
-    puts " #{@data['1']} | #{@data['2']} | #{@data['3']} "
-    puts '---|---|---'
-    puts " #{@data['4']} | #{@data['5']} | #{@data['6']} "
-    puts '---|---|---'
-    puts " #{@data['7']} | #{@data['8']} | #{@data['9']} "
+    puts <<~HEREDOC
+
+       #{@data['1']} | #{@data['2']} | #{@data['3']}
+      ---|---|---
+       #{@data['4']} | #{@data['5']} | #{@data['6']}
+      ---|---|---
+       #{@data['7']} | #{@data['8']} | #{@data['9']}
+
+    HEREDOC
   end
 
   def update_board(index, input)
     @data[index] = input
-    draw_board
   end
 end
